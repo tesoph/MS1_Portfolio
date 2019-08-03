@@ -1,0 +1,27 @@
+/*-------------------------------------------- COLORS */
+
+/*-------------------------------------------- HEADER */
+#logo{
+    display:block;
+    margin: 10px auto;
+    height:200px;
+    width:300px;
+}
+
+  
+  .navbar{
+      flex-direction:column;
+    }
+
+    
+/*
+li{
+    display:inline-block;
+    float:none;
+}
+
+ul{
+    width:100%;
+    text-align:center;
+}
+*/
