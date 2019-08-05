@@ -10,21 +10,30 @@
 
     <title>Ray Mc Laughlin</title>
 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <!-- Bootstrap core CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font-Awesome CSS -->
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
     <!-- Lightbox Gallery JS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js">
+
     <!-- Lightbox Gallery MAP-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js.map">
     <!--Lightbox Gallery CSS-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" rel="stylesheet" type="text/css">
     <!-- Custom CSS -->
     <link href="styles/main.css" rel="stylesheet">
+    <link href="styles/modal.css" rel="stylesheet">
+
+    <!--Custom JS-->
+    <script src="js/modal.js"></script>
     <!--for brands icon fontawesome-->
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/brands.js" integrity="sha384-sCI3dTBIJuqT6AwL++zH7qL8ZdKaHpxU43dDt9SyOzimtQ9eyRhkG3B7KMl6AO19" crossorigin="anonymous"></script>
+
+
+
+
 </head>
 
 <body>
@@ -70,34 +79,74 @@
 
         <!-- Page Content -->
         <section>
-            <div class="row justify-content-center">
-                <div class="col-md-8">
-                    <div class="row imagerow">
-                        <a href="https://unsplash.it/1200/768.jpg?image=251" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
-                            <img src="https://unsplash.it/600.jpg?image=251" class="img-fluid">
-                        </a>
-                        <a href="https://unsplash.it/1200/768.jpg?image=252" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
-                            <img src="https://unsplash.it/600.jpg?image=252" class="img-fluid">
-                        </a>
-                        <a href="https://unsplash.it/1200/768.jpg?image=253" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
-                            <img src="https://unsplash.it/600.jpg?image=253" class="img-fluid">
-                        </a>
+            <div class="row">
+                <div class="column">
+                    <img src="images/img1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img src="images/img2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img src="images/img3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img src="images/img4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+                </div>
+            </div>
+
+            <!-- The Modal/Lightbox -->
+            <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 4</div>
+                        <modalimg src="images/img1_wide.jpg" style="width:100%">
                     </div>
-                    <div class="row imagerow">
-                        <a href="https://unsplash.it/1200/768.jpg?image=254" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
-                            <img src="https://unsplash.it/600.jpg?image=254" class="img-fluid">
-                        </a>
-                        <a href="https://unsplash.it/1200/768.jpg?image=255" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
-                            <img src="https://unsplash.it/600.jpg?image=255" class="img-fluid">
-                        </a>
-                        <a href="https://unsplash.it/1200/768.jpg?image=256" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
-                            <img src="https://unsplash.it/600.jpg?image=256" class="img-fluid">
-                        </a>
+
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 4</div>
+                        <modalimg src="images/img2_wide.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 4</div>
+                        <modalimg src="images/img3_wide.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">4 / 4</div>
+                        <modalimg src="images/img4_wide.jpg" style="width:100%">
+                    </div>
+
+                    <!-- Next/previous controls -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    <!-- Caption text -->
+                    <div class="caption-container">
+                        <p id="caption"></p>
+                    </div>
+
+                    <!-- Thumbnail image controls -->
+                    <div class="column">
+                        <img class="demo" src="images/img1.jpg" onclick="currentSlide(1)" alt="Nature">
+                    </div>
+
+                    <div class="column">
+                        <img class="demo" src="images/img2.jpg" onclick="currentSlide(2)" alt="Snow">
+                    </div>
+
+                    <div class="column">
+                        <img class="demo" src="images/img3.jpg" onclick="currentSlide(3)" alt="Mountains">
+                    </div>
+
+                    <div class="column">
+                        <img class="demo" src="images/img4.jpg" onclick="currentSlide(4)" alt="Lights">
                     </div>
                 </div>
             </div>
 
-            <!--<img src="cinqueterre.jpg" class="img-responsive" alt="Cinque Terre">-->
         </section>
         <!-- Footer -->
         <footer class="footer page-footer fixed-bottom">
@@ -151,17 +200,53 @@
     </div>
 
     <!-- SCRIPTS -->
+    <script>
+        // Open the Modal
+        function openModal() {
+            document.getElementById("myModal").style.display = "block";
+        }
 
-    <script type="text/javascript">
-        $(document).on('click', '[data-toggle="lightbox"]', function(event) {
-            event.preventDefault();
-            $(this).ekkoLightbox({
-                alwaysShowClose: true,
-            });
-        });
+        // Close the Modal
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js.map"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
