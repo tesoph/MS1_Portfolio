@@ -1,21 +1,27 @@
 /*-------------------------------------------- COLORS */
 
-/*-------------------------------------------- HEADER */
-#logo{
-    display:block;
+
+/*-------------------------------------------- NAVIGATION BAR */
+
+#logo {
+    display: block;
     margin: 10px auto;
-    height:200px;
-    width:300px;
+    height: 200px;
+    width: 300px;
 }
 
-  
-  .navbar{
-      flex-direction:column;
-    }
+.navbar {
+    flex-direction: column;
+}
 
-    .imagerow{
-margin-bottom: 5%;
-    }
+
+/*-------------------------------------------- GALLERY */
+
+.imagerow {
+    margin-bottom: 5%;
+}
+
+
 /*
 li{
     display:inline-block;
