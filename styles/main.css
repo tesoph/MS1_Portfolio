@@ -19,18 +19,15 @@
     color:black;
 }
 
-.gallery-wrapper {
-    margin-left: 9%;
-    margin-right: 9%;
-}
-
-
 /*-------------------------------------------- GALLERY */
 
 .gallery-wrapper {
     margin-left: 9%;
     margin-right: 9%;
+    margin-top: 2.5%;
+    margin-bottom:2%;
 }
+
 
 .imagerow {
     margin-bottom: 5%;
@@ -67,9 +64,13 @@
 }
 
 /*-------------------------------------------- MEDIA QUERIES */
+
 @media (min-width: 576px) {
     .carousel-item img {
         height: 70%;
+    }
+    .gallery-col{
+margin-top:2%;
     }
 }
 
