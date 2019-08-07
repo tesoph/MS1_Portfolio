@@ -15,6 +15,9 @@
     flex-direction: column;
 }
 
+.nav-link{
+    color:black;
+}
 .container-fluid {}
 
 .gallery-wrapper {
