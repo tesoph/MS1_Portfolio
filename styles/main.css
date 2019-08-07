@@ -67,6 +67,7 @@
     object-fit: contain;
 }
 
+/*-------------------------------------------- MEDIA QUERIES */
 @media (min-width: 576px) {
     .carousel-item img {
         height: 70%;
