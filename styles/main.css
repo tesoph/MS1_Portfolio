@@ -3,8 +3,8 @@
 
 /*-------------------------------------------- NAVIGATION BAR */
 
-#logo {
-    display: block;
+.logo {
+    
     margin: 10px auto;
      max-height:80%;
    max-width:200px;
