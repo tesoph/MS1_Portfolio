@@ -6,8 +6,9 @@
 #logo {
     display: block;
     margin: 10px auto;
-    height: 200px;
-    width: 300px;
+     max-height:80%;
+   max-width:200px;
+   border-radius: 6.5rem!important;
 }
 
 .navbar {
