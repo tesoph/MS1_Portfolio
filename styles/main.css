@@ -212,11 +212,11 @@ img {
 
 .scrolling-wrapper{
     display: flex;
-    flex-wrap: nowrap;!important;
-    overflow-x: auto;  !important;
-    -webkit-overflow-scrolling: touch;!important;
-    width:auto;!important;
-    white-space:nowrap;!important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+    width:auto !important;
+    white-space:nowrap !important;
 
   }
   .col-10 {
