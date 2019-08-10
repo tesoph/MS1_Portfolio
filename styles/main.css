@@ -7,7 +7,7 @@
     max-height: 50%;
     max-width: 120px;
     border-radius: 6.5rem!important;
-    
+
 }
 
 .navbar {
@@ -62,10 +62,11 @@ section h1 {
     width: 100%;
     height: auto;
 }
+/*
 
 #gallery img {
     max-width: 100%;
-}
+}*/
 
 .carousel-item img {
     width: 70%;
@@ -192,7 +193,7 @@ img {
 }
 
 @media (min-width: 768px) {
-    #gallery img {
+    #scrolling-wrapper img {
         height: 100%;
     }
     .shop {
@@ -220,6 +221,9 @@ img {
     white-space:nowrap;
 
   }
+  #scrolling-wrapper img {
+    max-width: 100%;
+}
   .col-10 {
     flex: 0 0 auto;
     padding-left:1px;
