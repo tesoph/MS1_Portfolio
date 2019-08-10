@@ -4,13 +4,17 @@
 
 .logo {
     margin: 10px auto;
-    max-height: 80%;
-    max-width: 200px;
+    max-height: 50%;
+    max-width: 120px;
     border-radius: 6.5rem!important;
 }
 
 .navbar {
     flex-direction: column;
+   /* 
+   
+   background-image: url("../images/background-01.png");
+   */
 }
 
 .nav-link {
@@ -145,6 +149,7 @@ img {
     background-color: white;
     padding-top: 1%;
     padding-bottom: 0.5%;
+    margin-top:5%;
 }
 
 .footer ul li {
@@ -182,6 +187,7 @@ img {
         margin-top: 2.5%;
         margin-bottom: 2%;
     }
+
 }
 
 @media (min-width: 768px) {
@@ -199,5 +205,41 @@ img {
     }
     .shop {
         margin-bottom: 10%;
+    }
+}
+
+/*-------------------------------------------- TESTING */
+
+.scrolling-wrapper{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;  
+    -webkit-overflow-scrolling: touch;
+    width:auto;
+    white-space:nowrap;
+
+  }
+  .col-10 {
+    flex: 0 0 auto;
+    padding-left:1px;
+    padding-right:1px;
+  }
+
+  @media (min-width: 576px) {
+    
+    .scrolling-wrapper{
+        display: flex;
+        overflow-x:initial;
+        flex-wrap: wrap;
+       
+      }
+      .card {
+        
+      }
+      .logo {
+        margin: 10px auto;
+        max-height: 80%;
+        max-width: 200px;
+        border-radius: 6.5rem!important;
     }
 }
