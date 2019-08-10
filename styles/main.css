@@ -210,13 +210,13 @@ img {
 
 /*-------------------------------------------- TESTING */
 
-.scrolling-wrapper{
+#scrolling-wrapper{
     display: flex;
-    flex-wrap: nowrap !important;
-    overflow-x: auto !important;
-    -webkit-overflow-scrolling: touch !important;
-    width:auto !important;
-    white-space:nowrap !important;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    width:auto;
+    white-space:nowrap;
 
   }
   .col-10 {
@@ -227,7 +227,7 @@ img {
 
   @media (min-width: 576px) {
     
-    .scrolling-wrapper{
+    #scrolling-wrapper{
         display: flex;
         overflow-x:initial;
         flex-wrap: wrap;
