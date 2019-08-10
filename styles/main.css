@@ -149,7 +149,7 @@ img {
     background-color: white;
     padding-top: 1%;
     padding-bottom: 0.5%;
-    margin-top:5%;
+    
 }
 
 .footer ul li {
@@ -212,11 +212,11 @@ img {
 
 .scrolling-wrapper{
     display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto;  
-    -webkit-overflow-scrolling: touch;
-    width:auto;
-    white-space:nowrap;
+    flex-wrap: nowrap;!important;
+    overflow-x: auto;  !important;
+    -webkit-overflow-scrolling: touch;!important;
+    width:auto;!important;
+    white-space:nowrap;!important;
 
   }
   .col-10 {
