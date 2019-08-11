@@ -1,4 +1,20 @@
 /*-------------------------------------------- COLORS */
+:root {
+    --main-bg-color:  #EAE7DC;
+    --main-txt-color: #314455;
+    --main-nav-txt-color: #314455;
+    --main-footer-txt-color: #8E8D8A;
+
+    /*
+   #eAE7Dc;
+   #D8C3a5;
+   #8E7D8a;
+   #e98074;
+   #e85a4f;
+    */
+  }
+  
+  
 
 /*-------------------------------------------- NAVIGATION BAR */
 
@@ -6,7 +22,7 @@
     margin: 10px auto;
     max-height: 50%;
     max-width: 120px;
-    border-radius: 6.5rem!important;
+    border-radius: 50%;
 
 }
 
@@ -19,11 +35,25 @@
 }
 
 .nav-link {
-    color: black;
+    color: var(--main-nav-txt-color);
+ 
+}
+
+.dropdown-item{
+    background-color: var(--main-bg-color);
+    color: var(--main-txt-color);
+}
+.dropdown-menu {
+    margin:0;
+    padding:0;
 }
 
 /*-------------------------------------------- BODY */
 
+body{
+   background-color: var(--main-bg-color);
+   color: var(--main-txt-color);
+}
 .section-wrapper {
     margin-left: 2%;
     margin-right: 2%;
@@ -48,8 +78,18 @@ section h1 {
     max-height: 100%;
 }
 
+.gallery-col{
+   
+}
+
 .gallery-container {
     justify-content: center;
+    
+}
+
+#scrolling-wrapper img{
+    vertical-align:middle;
+    max-height:360px;
 }
 
 .modal-dialog {
@@ -133,7 +173,7 @@ p {
     margin-bottom: 5px;
 }
 
-img {
+.shop img {
     object-fit: contain;
     width: 100%;
 }
@@ -148,7 +188,8 @@ img {
 /*-------------------------------------------- FOOTER */
 
 .footer {
-    background-color: white;
+    background-color: var(--main-bg-color);
+    color: var(--main-footer-txt-color);
     padding-top: 1%;
     padding-bottom: 0.5%;
     
@@ -210,7 +251,7 @@ img {
     }
 }
 
-/*-------------------------------------------- TESTING */
+/*-------------------------------------------- TESTING HORIZONTAL SCROLLING MOBILE-FIRST*/
 
 #scrolling-wrapper{
     display: flex;
@@ -219,15 +260,21 @@ img {
     -webkit-overflow-scrolling: touch;
     width:auto;
     white-space:nowrap;
-
+padding-bottom:20%;
+padding-left:10px;
+padding-right:10px;
+padding-top:10px;
+/*
+background-color: #8e8d8a;
+*/
   }
   #scrolling-wrapper img {
-    max-width: 100%;
+   /* max-width: 100%;*/
+   
 }
   .col-10 {
     flex: 0 0 auto;
-    padding-left:1px;
-    padding-right:1px;
+    
   }
 
   @media (min-width: 576px) {
@@ -238,6 +285,12 @@ img {
         flex-wrap: wrap;
        
       }
+      #scrolling-wrapper img {
+          width:100%;
+          height:auto;
+         max-width: 100%;
+         max-height:auto;
+     }
       .card {
         
       }
@@ -245,6 +298,5 @@ img {
         margin: 10px auto;
         max-height: 80%;
         max-width: 200px;
-        border-radius: 6.5rem!important;
     }
 }
