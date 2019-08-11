@@ -1,3 +1,7 @@
+/*-------------------------------------------- FONTS */
+
+@import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
+
 /*-------------------------------------------- COLORS */
 :root {
     --main-bg-color:  #EAE7DC;
@@ -53,6 +57,8 @@
 body{
    background-color: var(--main-bg-color);
    color: var(--main-txt-color);
+
+   font-family: 'Inconsolata', monospace;
 }
 .section-wrapper {
     margin-left: 2%;
@@ -69,6 +75,7 @@ section h1 {
 
 section h3 {
     text-align: center;
+    padding-top:5%;
 }
 
 
@@ -301,5 +308,30 @@ background-color: #8e8d8a;
         margin: 10px auto;
         max-height: 80%;
         max-width: 200px;
+    }
+}
+
+@media (min-width: 768px) {
+    #scrolling-wrapper{
+        padding-bottom:10%;
+padding-left:10px;
+padding-right:10px;
+padding-top:5%;
+    }
+    #scrolling-wrapper img {
+        max-width:100%;
+        height:auto;
+    }
+    .shop {
+        margin-bottom: 20%;
+    }
+}
+
+@media (min-width: 992px) {
+    .carousel-item img {
+        height: 60%;
+    }
+    .shop {
+        margin-bottom: 10%;
     }
 }
