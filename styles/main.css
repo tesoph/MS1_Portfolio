@@ -4,7 +4,7 @@
 
 /*-------------------------------------------- COLORS */
 :root {
-    --main-bg-color:  #EAE7DC;
+    --main-bg-color:  #dfdfdf;
     --main-txt-color: #314455;
     --main-nav-txt-color: #314455;
     --main-footer-txt-color: #8E8D8A;
@@ -57,27 +57,39 @@
 body{
    background-color: var(--main-bg-color);
    color: var(--main-txt-color);
-
    font-family: 'Inconsolata', monospace;
 }
+
 .section-wrapper {
     margin-left: 2%;
     margin-right: 2%;
     margin-top: 2.5%;
     margin-bottom: 2%;
 }
-
+section h1 {
+    text-align: center; 
+}
 /*-------------------------------------------- GALLERY */
 
-section h1 {
-    text-align: center;
-}
+#scrolling-wrapper{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    width:auto;
+    white-space:nowrap;
+    padding-bottom:20%;
+    padding-left:10px;
+    padding-right:10px;
+    padding-top:15%;
+  }
 
-section h3 {
-    text-align: center;
-    padding-top:5%;
-}
+  #scrolling-wrapper img {
 
+}
+  .col-10 {
+    flex: 0 0 auto;
+  }
 
 .imagerow {
     margin-bottom: 5%;
@@ -94,7 +106,6 @@ section h3 {
 
 .gallery-container {
     justify-content: center;
-    
 }
 
 #scrolling-wrapper img{
@@ -112,11 +123,6 @@ section h3 {
     width: 100%;
     height: auto;
 }
-/*
-
-#gallery img {
-    max-width: 100%;
-}*/
 
 .carousel-item img {
     width: 70%;
@@ -135,17 +141,25 @@ section h3 {
     padding-right: 0!important
 }/*
 
-
 /*-------------------------------------------- SHOP */
 
 .shop {
     margin-bottom: 40%;
 }
-/*
-.product-row {
-    justify-content:inline;
+
+.shop-col{
+    padding-top:5%;
+    padding-bottom:5%;
+    /*background-color: #8E8D8A;*/
 }
-*/
+/*
+.btn{
+   background-color: #9eb9b2;
+}
+
+.btn-success:hover{
+    background-color: #6e8a84;
+}*/
 
 h4 {
     font-weight: 600;
@@ -201,8 +215,7 @@ p {
     background-color: var(--main-bg-color);
     color: var(--main-footer-txt-color);
     padding-top: 1%;
-    padding-bottom: 0.5%;
-    
+    padding-bottom: 0.5%; 
 }
 
 .footer ul li {
@@ -262,30 +275,6 @@ p {
 }
 
 /*-------------------------------------------- TESTING HORIZONTAL SCROLLING MOBILE-FIRST*/
-
-#scrolling-wrapper{
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    width:auto;
-    white-space:nowrap;
-padding-bottom:35%;
-padding-left:10px;
-padding-right:10px;
-padding-top:15%;
-/*
-background-color: #8e8d8a;
-*/
-  }
-  #scrolling-wrapper img {
-   /* max-width: 100%;*/
-   
-}
-  .col-10 {
-    flex: 0 0 auto;
-    
-  }
 
   @media (min-width: 576px) {
     
