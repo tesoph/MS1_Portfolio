@@ -148,19 +148,19 @@ section h1 {
 }
 
 .shop-col{
-    margin-bottom:7.5%;
     padding-top:5%;
     padding-bottom:5%;
     /*background-color: #8E8D8A;*/
 }
 
+/*
 .btn{
-   background-color: #9eb9b2;
 }
 
 .btn-success:hover{
     background-color: #6e8a84;
 }
+*/
 
 h4 {
     font-weight: 600;
