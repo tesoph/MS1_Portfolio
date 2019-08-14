@@ -1,24 +1,14 @@
 /*-------------------------------------------- FONTS */
 
 @import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
-
 /*-------------------------------------------- COLORS */
+
 :root {
-    --main-bg-color:  #dfdfdf;
+    --main-bg-color: #dfdfdf;
     --main-txt-color: #314455;
     --main-nav-txt-color: #314455;
     --main-footer-txt-color: #8E8D8A;
-
-    /*
-   #eAE7Dc;
-   #D8C3a5;
-   #8E7D8a;
-   #e98074;
-   #e85a4f;
-    */
-  }
-  
-  
+}
 
 /*-------------------------------------------- NAVIGATION BAR */
 
@@ -27,69 +17,66 @@
     max-height: 50%;
     max-width: 120px;
     border-radius: 50%;
-
 }
 
 .navbar {
     flex-direction: column;
-   /* 
-   
+    /* 
    background-image: url("../images/background-01.png");
    */
 }
 
 .nav-link {
     color: var(--main-nav-txt-color);
- 
 }
 
-.dropdown-item{
+.dropdown-item {
     background-color: var(--main-bg-color);
     color: var(--main-txt-color);
 }
+
 .dropdown-menu {
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 }
 
 /*-------------------------------------------- BODY */
 
-body{
-   background-color: var(--main-bg-color);
-   color: var(--main-txt-color);
-   font-family: 'Inconsolata', monospace;
+body {
+    background-color: var(--main-bg-color);
+    color: var(--main-txt-color);
+    font-family: 'Inconsolata', monospace;
 }
 
 .section-wrapper {
     margin-left: 2%;
     margin-right: 2%;
     margin-top: 2.5%;
-    margin-bottom: 2%;
+    margin-bottom: 2.5%;
 }
+
 section h1 {
-    text-align: center; 
+    text-align: center;
 }
+
 /*-------------------------------------------- GALLERY */
 
-#scrolling-wrapper{
+#scrolling-wrapper {
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
-    width:auto;
-    white-space:nowrap;
-    padding-bottom:20%;
-    padding-left:10px;
-    padding-right:10px;
-    padding-top:15%;
-  }
-
-  #scrolling-wrapper img {
-
+    width: auto;
+    white-space: nowrap;
+    padding-bottom: 20%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 15%;
 }
-  .col-10 {
+
+.col-10 {
     flex: 0 0 auto;
-  }
+}
 
 .imagerow {
     margin-bottom: 5%;
@@ -100,46 +87,35 @@ section h1 {
     max-height: 100%;
 }
 
-.gallery-col{
-   
-}
-
 .gallery-container {
     justify-content: center;
 }
 
-#scrolling-wrapper img{
-    vertical-align:middle;
-    max-height:360px;
+#scrolling-wrapper img {
+    vertical-align: middle;
+    max-height: 360px;
 }
 
-.modal-dialog {
+/*-------------------------------------------- MODAL */
+
+.modal-header {
+    display: none;
+}
+
+.modal-body{
+    flex: 1 1 auto;
+    padding:15px;
+}
+
+.modal-dialog{
+    /*
+    margin:2.5vh auto;
     flex: 1 1 1px;
-    max-width: 983px;
-    max-height: 983px;
+    max-width: 90%;
+    max-height: 90%;
+    */
 }
 
-.modal-content {
-    width: 100%;
-    height: auto;
-}
-
-.carousel-item img {
-    width: 70%;
-    height: auto;
-    object-fit: contain;
-}
-
-/*
-.mod {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    padding-right: 0!important
-}/*
 
 /*-------------------------------------------- SHOP */
 
@@ -147,20 +123,11 @@ section h1 {
     margin-bottom: 40%;
 }
 
-.shop-col{
-    padding-top:5%;
-    padding-bottom:5%;
+.shop-col {
+    padding-top: 5%;
+    padding-bottom: 5%;
     /*background-color: #8E8D8A;*/
 }
-
-/*
-.btn{
-}
-
-.btn-success:hover{
-    background-color: #6e8a84;
-}
-*/
 
 h4 {
     font-weight: 600;
@@ -211,17 +178,18 @@ p {
 }
 
 /*-------------------------------------------- CONTACT */
+
 input[type="file"] {
     display: none;
 }
-.custom-file-upload{
-   
+
+.custom-file-upload {
     background-color: #f4511e;
     border: none;
     color: white;
     padding: .375rem .75rem;
     height: calc(1.5em + .75rem +2px);
-    width:100%;
+    width: 100%;
     text-align: left;
     font-size: 16px;
     margin: 4px 2px;
@@ -231,19 +199,21 @@ input[type="file"] {
     text-decoration: none;
     cursor: pointer;
     border-radius: .25rem;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
+
 .custom-file-upload:hover {
     box-shadow: 0px 0px 10px #4bc6ff;
-    opacity:1;
+    opacity: 1;
 }
+
 /*-------------------------------------------- FOOTER */
 
 .footer {
     background-color: var(--main-bg-color);
     color: var(--main-footer-txt-color);
     padding-top: 1%;
-    padding-bottom: 0.5%; 
+    padding-bottom: 0.5%;
 }
 
 .footer ul li {
@@ -271,8 +241,7 @@ input[type="file"] {
     .shop {
         margin-bottom: 30%;
     }
-
-    .shop .row{
+    .shop .row {
         justify-content: space-between;
     }
     .section-wrapper {
@@ -281,7 +250,6 @@ input[type="file"] {
         margin-top: 2.5%;
         margin-bottom: 2%;
     }
-
 }
 
 @media (min-width: 768px) {
@@ -304,24 +272,20 @@ input[type="file"] {
 
 /*-------------------------------------------- TESTING HORIZONTAL SCROLLING MOBILE-FIRST*/
 
-  @media (min-width: 576px) {
-    
-    #scrolling-wrapper{
+@media (min-width: 576px) {
+    #scrolling-wrapper {
         display: flex;
-        overflow-x:initial;
+        overflow-x: initial;
         flex-wrap: wrap;
-       
-      }
-      #scrolling-wrapper img {
-          width:100%;
-          height:auto;
-         max-width: 100%;
-         max-height:auto;
-     }
-      .card {
-        
-      }
-      .logo {
+    }
+    #scrolling-wrapper img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        max-height: auto;
+    }
+    .card {}
+    .logo {
         margin: 10px auto;
         max-height: 80%;
         max-width: 200px;
@@ -329,15 +293,15 @@ input[type="file"] {
 }
 
 @media (min-width: 768px) {
-    #scrolling-wrapper{
-        padding-bottom:10%;
-padding-left:10px;
-padding-right:10px;
-padding-top:5%;
+    #scrolling-wrapper {
+        padding-bottom: 10%;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 5%;
     }
     #scrolling-wrapper img {
-        max-width:100%;
-        height:auto;
+        max-width: 100%;
+        height: auto;
     }
     .shop {
         margin-bottom: 20%;
