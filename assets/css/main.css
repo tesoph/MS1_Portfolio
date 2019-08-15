@@ -4,10 +4,19 @@
 /*-------------------------------------------- COLORS */
 
 :root {
+   
     --main-bg-color: #dfdfdf;
     --main-txt-color: #314455;
     --main-nav-txt-color: #314455;
     --main-footer-txt-color: #8E8D8A;
+
+/*
+DARK THEME
+    --main-bg-color: #373737;
+    --main-txt-color: white;
+    --main-nav-txt-color: white;
+    --main-footer-txt-color: white;
+*/
 }
 
 /*-------------------------------------------- NAVIGATION BAR */
@@ -110,21 +119,95 @@ section h1 {
 
 /*-------------------------------------------- MODAL */
 
+/**,
+*::before,
+*::after {
+  box-sizing: inherit; 
+}*/
+
+.modal.open {
+    display: -ms-flexbox!important;
+    display: flex!important;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-right: 0!important
+}
+
+/*When the modal is triggered, the body class changes to .modal-open, allowing the modal to be displayed only after being triggered*/
+.modal-open .modal{
+    display: -ms-flexbox!important;
+    display: flex!important;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-right: 0!important
+  
+}
+
+.modal.show .modal-dialog{
+    margin:2.5vh auto;
+    flex: 1 1 1px;
+    display:block;
+    width:auto;
+    -webkit-transform: translate(0,0);
+    transform: translate(0,0);
+}
+
 .modal-header {
     display: none;
+}
+
+.modal-footer {
+    display:none;
 }
 
 .modal-body{
     flex: 1 1 auto;
     padding:15px;
+    position:relative;
 }
 
-.modal-dialog{
-    margin:2.5vh auto;
-    flex: 1 1 1px;
+.carousel {
+    flex: 1 1 auto;
+    position: relative;
 }
 
+ .carousel-inner{
+    position:relative;
+    min-height:300px;
+    height:auto;
+    max-height:90vh;
+    overflow: auto;
+}
 
+.carousel-item{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    
+    
+    
+}
+.carousel-item.active{
+    height:auto;
+    display:block;
+    
+}
+
+.modal .img-fluid{
+    width:100%;
+    height:auto;
+    max-width:100%;
+}
+.carousel-indicators{
+    display:none;
+}
 /*-------------------------------------------- SHOP */
 
 .shop {
@@ -240,9 +323,9 @@ input[type="file"] {
 /*-------------------------------------------- MEDIA QUERIES */
 
 @media (min-width: 576px) {
-    .carousel-item img {
+   /* .carousel-item img {
         height: 70%;
-    }
+    }*/
     .gallery-col {
         margin-top: 2%;
     }
@@ -270,9 +353,9 @@ input[type="file"] {
 }
 
 @media (min-width: 992px) {
-    .carousel-item img {
+   /* .carousel-item img {
         height: 60%;
-    }
+    }*/
     .shop {
         margin-bottom: 10%;
     }
@@ -317,10 +400,48 @@ input[type="file"] {
 }
 
 @media (min-width: 992px) {
-    .carousel-item img {
-        height: 60%;
+  /*  .carousel-item img {
+        height: 60%;*/
     }
     .shop {
         margin-bottom: 10%;
     }
+}
+
+/*-------------------------------------------- LANDING PAGE*/
+
+.landing-container{
+    background-image: url("../img/backgrounds/background-02.png");
+    background-color:black;
+    background-repeat: no-repeat;
+    background-position:center;
+    height:100vh;
+    background-size:cover;
+    font-size:25px;
+}
+
+.landing-logo{
+    border-radius: 50%;
+}
+.logo-container {
+    display: -webkit-flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    justify-content: center;
+    height:100%;
+    width:100%;
+}
+
+
+.landing-container .nav-link {
+    color:white;
+}
+
+.landing-container .dropdown-item{
+ background:black;
 }
