@@ -250,8 +250,8 @@ section h1 {
     display: flex;
     flex-wrap: wrap;
     padding-bottom:5%;
-    padding-left: 2;
-    padding-right:2%;
+    padding-left: 3.5%;
+    padding-right:3.5%;
     padding-top:2%;
   }
   
@@ -348,7 +348,7 @@ input[type="file"] {
     color: white;
     padding: .375rem .75rem;
     height: calc(1.5em + .75rem +2px);
-    width: 25%;
+    
     text-align: left;
     font-size: 16px;
     margin: 4px 2px;
@@ -386,6 +386,10 @@ input[type="file"] {
 .footercol {
     display: flex;
     align-items: center;
+}
+
+.text-right{
+    font-size:0.7rem;
 }
 
 /*-------------------------------------------- MEDIA QUERIES */
