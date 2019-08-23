@@ -17,6 +17,10 @@ DARK THEME
 */
 }
 
+h1{
+    visibility: hidden;
+}
+
 /*-------------------------------------------- NAVIGATION BAR */
 
 .logo {
@@ -28,9 +32,7 @@ DARK THEME
 
 .navbar {
     flex-direction: column;
-    
-   background-image: url("../images/background-01.png");
-   
+    /*background-image: url("../img/backgrounds/background-01.png");*/
 }
 
 .nav-link {
@@ -47,6 +49,12 @@ DARK THEME
     padding: 0;
 }
 
+@media (min-width: 576px) {
+    .navbar {
+        font-size: 1.50rem;
+    }
+}
+
 /*-------------------------------------------- BODY */
 
 body {
@@ -56,14 +64,18 @@ body {
 }
 
 .section-wrapper {
-    margin-left: 2%;
-    margin-right: 2%;
-    margin-top: 2.5%;
-    margin-bottom: 2.5%;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 section h1 {
     text-align: center;
+}
+
+.mobile-spacing {
+    margin: 75px;
 }
 
 /*-------------------------------------------- GALLERY */
@@ -81,11 +93,19 @@ section h1 {
     padding-top: 15%;*/
 }
 
+.gallery-col {
+    overflow-x: hidden;
+}
+
+.img-thumb {}
+
 .col-10 {
     flex: 0 0 auto;
     padding-right: 1px;
     padding-left: 1px;
 }
+
+/*
 
 .col-12 {
     flex: 0 0 auto;
@@ -97,16 +117,19 @@ section h1 {
     align-items: center;
     flex-wrap: wrap;
 }
+*/
 
 .col-11 {
     flex: 0 0 auto;
-    padding-right: 2px;
-    padding-left: 2px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    /*  margin-left:0.5px;
+   margin-right:0.5px;*/
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    max-height: 570px;
+    /*max-width:475px;*/
 }
 
 .col-12 img {
@@ -114,7 +137,8 @@ section h1 {
 }
 
 .col-11 img {
-    max-width: 100%;
+    max-width: 200%;
+    max-height: 150%;
     display: block;
     margin: auto;
 }
@@ -134,7 +158,52 @@ section h1 {
 
 #scrolling-wrapper img {
     vertical-align: middle;
-    max-height: 420px;
+    /* max-height: 420px;*/
+}
+
+@media (min-width: 576px) {
+    .col-11 {
+        flex: 0 0 auto;
+        /*  margin-left:0.5px;
+   margin-right:0.5px;*/
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        max-height: 375px;
+        /*max-width:475px;*/
+    }
+}
+
+@media (min-width: 768px) {
+    .col-11 {
+        flex: 0 0 auto;
+        /*  margin-left:0.5px;
+   margin-right:0.5px;*/
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        max-height: 325px;
+        /*max-width:475px;*/
+    }
+}
+
+@media (min-width: 992px) {
+    .col-11 {
+        flex: 0 0 auto;
+        /*  margin-left:0.5px;
+   margin-right:0.5px;*/
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        max-height: 375px;
+        /*max-width:475px;*/
+    }
 }
 
 /*-------------------------------------------- MODAL */
@@ -249,38 +318,35 @@ section h1 {
 .products {
     display: flex;
     flex-wrap: wrap;
-    padding-bottom:5%;
+    padding-bottom: 5%;
     padding-left: 3.5%;
-    padding-right:3.5%;
-    padding-top:2%;
-  }
-  
-  .product-card {
+    padding-right: 3.5%;
+    padding-top: 2%;
+}
+
+.product-card {
     padding: 2%;
     flex-grow: 1;
     flex-basis: 40%;
-  flex-direction: column;
-    display: flex; /* so child elements can use flexbox stuff too! */
-    align-content:center;
-  }
+    flex-direction: column;
+    display: flex;
+    /* so child elements can use flexbox stuff too! */
+    align-content: center;
+}
 
-  .product-image img {
+.product-image img {
     max-width: 100%;
- /*   max-height: 600px;*/
-  }
+    /*   max-height: 600px;*/
+}
 
-  .product-info {
+.product-info {
     margin-top: auto;
-    align-self:center;
- 
-  }
-
+    align-self: center;
+}
 
 .shop {
     margin-bottom: 40%;
 }
-
-
 
 .shop-col {
     padding-top: 5%;
@@ -348,7 +414,6 @@ input[type="file"] {
     color: white;
     padding: .375rem .75rem;
     height: calc(1.5em + .75rem +2px);
-    
     text-align: left;
     font-size: 16px;
     margin: 4px 2px;
@@ -388,8 +453,8 @@ input[type="file"] {
     align-items: center;
 }
 
-.text-right{
-    font-size:0.7rem;
+.text-right {
+    font-size: 0.7rem;
 }
 
 /*-------------------------------------------- MEDIA QUERIES */
