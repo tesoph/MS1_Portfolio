@@ -79,7 +79,9 @@ section h1 {
 }
 
 /*-------------------------------------------- GALLERY */
-
+.space-col{
+   min-width:50px;
+}
 #scrolling-wrapper {
     display: flex;
     flex-wrap: nowrap;
@@ -87,6 +89,7 @@ section h1 {
     -webkit-overflow-scrolling: touch;
     width: auto;
     white-space: nowrap;
+   /* margin-right:30px;*/
     /*padding-bottom: 20%;
     padding-left: 10px;
     padding-right: 10px;
@@ -141,6 +144,9 @@ section h1 {
     max-height: 150%;
     display: block;
     margin: auto;
+}
+.col-11:last-of-type{
+
 }
 
 .imagerow {
