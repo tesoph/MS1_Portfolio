@@ -13,7 +13,8 @@
     <!-- Bootstrap core CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font-Awesome CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        type="text/css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
         type="text/css" />
     <!-- Custom CSS -->
@@ -22,7 +23,7 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/brands.js"
         integrity="sha384-sCI3dTBIJuqT6AwL++zH7qL8ZdKaHpxU43dDt9SyOzimtQ9eyRhkG3B7KMl6AO19"
         crossorigin="anonymous"></script>
-    <!----FFancybox JS---->
+    <!--Fancybox-->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
@@ -32,17 +33,17 @@
 </head>
 
 <body>
-    <!-- PAGE WRAPPER-->
-  <div class="container-fluid">
-        <!-- HEADER-->
+    <!-- Page wrapper -->
+    <div class="container-fluid">
+        <!-- Header -->
         <header>
-            <!-- NAVIGATION-->
+            <!-- Navigation -->
             <nav class="navbar navbar-light navbar-expand-md" role="navigation">
                 <div><a href="index.html"><img class="img-fluid logo" src="assets/img/logo/logo2.png" alt="logo"></a>
                 </div>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
-                    aria-controls="navbarTogglerx" aria-expanded="false" aria-label="Toggle navigation">
+                    aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -75,13 +76,14 @@
                     </div>
                 </div>
             </nav>
+            <!-- End navigation -->
         </header>
+        <!-- End header -->
 
-
-        <!-- PAGE CONTENT-->
+        <!-- Portfolio section -->
         <section class="section-wrapper">
-          <!--<h1>GALLERY</h1>-->
-           
+
+            <!--<h1>GALLERY</h1>-->
 
             <div class="row " id="scrolling-wrapper">
                 <div class="col-11 col-sm-6 col-md-4 col-lg-3 gallery-col">
@@ -104,65 +106,62 @@
                     <a data-fancybox="gallery" href="assets/img/img5-large.jpg"><img
                             src="assets/img/img5-large.jpg"></a>
                 </div>
+                <!-- space-col to give visual indication of the end of horiztonal scrolling gallery on mobile view-->
                 <div class="space-col">
-                 
+
+                </div>
             </div>
-    </div>
-    </section>
-<div class="mobile-spacing"></div>
+        </section>
+        <!-- End portfolio section -->
 
-    <!-- Footer -->
-    <footer class="footer page-footer fixed-bottom">
-        <!-- Footer Elements -->
-        <div class="container-fluid ">
+        <div class="mobile-spacing"></div>
 
-            <!-- Grid row-->
-            <div class="row ">
-
-                <!-- Grid column -->
-                <div class="col-7 footercol">
-
-                    <a>
-                        <i class="fa fa-facebook fa-lg mr-md-5 mr-3 "> </i>
-                    </a>
-                    <!-- Twitter -->
-                    <a>
-                        <i class="fa fa-twitter fa-lg mr-md-5 mr-3 "> </i>
-                    </a>
-
-                    <!--Linkedin -->
-                    <!---
+        <!-- Footer -->
+        <footer class="footer page-footer fixed-bottom">
+            <!-- Footer Elements -->
+            <div class="container-fluid ">
+                <!-- Grid row-->
+                <div class="row ">
+                    <!-- Grid column -->
+                    <div class="col-7 footercol">
+                        <a>
+                            <i class="fa fa-facebook fa-lg mr-md-5 mr-3 "> </i>
+                        </a>
+                        <!-- Twitter -->
+                        <a>
+                            <i class="fa fa-twitter fa-lg mr-md-5 mr-3 "> </i>
+                        </a>
+                        <!--Linkedin -->
+                        <!---
                         fab icon not showing up: related to font weight? fab needs 400 fa needs 900
                         <a>
                             <i class="fab fa-linkedin fa-lg mr-md-5 mr-3 fa-2x " style="font-weight:400; "></i>
                         </a>-->
-                    <!--Instagram-->
-                    <a>
-                        <i class="fa fa-instagram fa-lg mr-md-5 mr-3  "> </i>
-                    </a>
-                    <!--Pinterest-->
-                    <a>
-                        <i class="fa fa-pinterest fa-lg mr-md-5 mr-3   "> </i>
-                    </a>
-
+                        <!--Instagram-->
+                        <a>
+                            <i class="fa fa-instagram fa-lg mr-md-5 mr-3  "> </i>
+                        </a>
+                        <!--Pinterest-->
+                        <a>
+                            <i class="fa fa-pinterest fa-lg mr-md-5 mr-3   "> </i>
+                        </a>
+                    </div>
+                    <!-- Grid column -->
+                    <div class="col-5 text-right my-auto">
+                        © 2019 Copyright ray
+                    </div>
                 </div>
-                <!-- Grid column -->
-                <div class="col-5 text-right my-auto">
-                    © 2019 Copyright ray
-                </div>
+                <!-- Grid row-->
             </div>
-            <!-- Grid row-->
 
-        </div>
+            <!--deleted </div> here -->
+        </footer>
+        <!-- End footer -->
 
-        </div>
+    </div>
+    <!-- End page wrapper -->
 
-
-        </div>
-    </footer>
-</div>
-    <!-- SCRIPTS -->
-
+    <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js "
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo "
         crossorigin="anonymous "></script>
@@ -172,8 +171,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js "
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM "
         crossorigin="anonymous "></script>
-
-
+    <!-- End scripts-->
 </body>
 
 </html>
