@@ -18,6 +18,23 @@ DARK THEME
 }
 
 /*-------------------------------------------- NAVIGATION BAR */
+.page-container{
+    margin-left:0px;
+}
+
+
+.navbar{
+    width:100%;
+    background-color:white;
+    overflow-x:auto;
+    padding-bottom:20px;
+    padding-top:20px;
+}
+.header{
+    background-color: white;
+    width:100%;
+    overflow-x:auto;
+}
 
 .logo {
     margin: 10px auto;
@@ -46,6 +63,21 @@ DARK THEME
 }
 
 @media (min-width: 576px) {
+
+    .navbar{
+        width:100%;
+        background-color:white;
+        overflow-x:auto;
+    }
+    .header{
+        width:100%;
+        overflow-x:auto;
+    }
+.page-container{
+ 
+    margin-left:0px;
+   
+}
     .navbar {
         font-size: 1.50rem;
     }
@@ -54,6 +86,36 @@ DARK THEME
         max-height: 80%;
         max-width: 200px;
     }
+}
+
+/*-------------------------------------------- FOOTER */
+.footer-space{
+    height:100px;
+    /*background-color:white;*/
+}
+.footer {
+    /*43.5*/
+    background-color: white;
+    color: var(--main-footer-txt-color);
+    padding-top: 1%;
+    padding-bottom: 0.5%;
+}
+
+.footer ul li {
+    display: inline-block;
+}
+
+.footer a {
+    color: black;
+}
+
+.footercol {
+    display: flex;
+    align-items: center;
+}
+
+.text-right {
+    font-size: 0.7rem;
 }
 
 /*-------------------------------------------- BODY */
@@ -67,8 +129,8 @@ body {
 .section-wrapper {
     margin-left: 1%;
     margin-right: 1%;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin-top: 7.5%;
+    margin-bottom: 7.5%;
 }
 
 section h1 {
@@ -76,11 +138,12 @@ section h1 {
     visibility: hidden;
 }
 
-.mobile-spacing {
-    margin: 75px;
-}
+
 
 /*-------------------------------------------- INDEX.HTML GALLERY */
+.mobile-spacing {
+    height:30px;
+}
 
 .space-col {
     min-width: 50px;
@@ -131,9 +194,14 @@ section h1 {
 
 #scrolling-wrapper img {
     vertical-align: middle;
+    min-height:570px;
 }
 
 @media (min-width: 576px) {
+    #scrolling-wrapper img {
+        vertical-align: middle;
+        min-height:0px;
+    }
     #scrolling-wrapper {
         display: flex;
         overflow-x: initial;
@@ -142,6 +210,9 @@ section h1 {
     .gallery-col {
         max-height: 375px;
         margin-bottom:15px;
+    }
+    .mobile-spacing{
+        display:none;
     }
 }
 
@@ -159,13 +230,15 @@ section h1 {
 
 /*-------------------------------------------- SHOP.HTML */
 
+
 .products {
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: 5%;
+    padding-bottom: 15%;
     padding-left: 3.5%;
     padding-right: 3.5%;
     padding-top: 2%;
+    margin-top:5%;
 }
 
 .product-card {
@@ -183,10 +256,7 @@ section h1 {
     /*   max-height: 600px;*/
 }
 
-.product-info {
-    margin-top: auto;
-    align-self: center;
-}
+
 
 .shop {
     margin-bottom: 40%;
@@ -238,7 +308,58 @@ p {
     object-fit: contain;
     width: 100%;
 }
+/**/
+/*
+.product-info {
+    margin-top: auto;
+    align-self: center;
+}
+.product-price{
+    position:absolute;
+    right:15px;
+   bottom:25px;
+}
 
+.product-image{
+  
+  overflow:hidden;
+}
+
+.product-info{
+  margin-top:
+  30px;
+}
+button{
+    position:absolute;
+    right:0;
+    bottom:0;
+}
+*/
+/**/
+.products{
+
+}
+.product-price{
+   padding: 1px 7px 2px;
+}
+h5{
+    padding: 1px 7px 2px;
+}
+  
+.products button{
+  position:absolute;
+  right:0px;
+  bottom:10px;
+}
+.product-info{
+    position:relative;
+    width:100%;
+    height:60px;
+}
+.products img{
+    
+}
+/**/
 @media (min-width: 576px) {
     .shop {
         margin-bottom: 30%;
@@ -249,8 +370,8 @@ p {
     .section-wrapper {
         margin-left: 9%;
         margin-right: 9%;
-        margin-top: 2.5%;
-        margin-bottom: 2%;
+        margin-top: 5%;
+        margin-bottom: 5%;
     }
 }
 
@@ -269,7 +390,6 @@ p {
         margin-bottom: 10%;
     }
 }
-
 /*-------------------------------------------- CONTACT.HTML */
 
 input[type="file"] {
@@ -297,32 +417,6 @@ input[type="file"] {
 .custom-file-upload:hover {
     box-shadow: 0px 0px 10px #4bc6ff;
     opacity: 1;
-}
-
-/*-------------------------------------------- FOOTER */
-
-.footer {
-    background-color: var(--main-bg-color);
-    color: var(--main-footer-txt-color);
-    padding-top: 1%;
-    padding-bottom: 0.5%;
-}
-
-.footer ul li {
-    display: inline-block;
-}
-
-.footer a {
-    color: black;
-}
-
-.footercol {
-    display: flex;
-    align-items: center;
-}
-
-.text-right {
-    font-size: 0.7rem;
 }
 
 /*-------------------------------------------- LANDING.HTML*/
