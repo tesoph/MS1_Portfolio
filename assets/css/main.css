@@ -17,10 +17,6 @@ DARK THEME
 */
 }
 
-h1{
-    visibility: hidden;
-}
-
 /*-------------------------------------------- NAVIGATION BAR */
 
 .logo {
@@ -53,6 +49,11 @@ h1{
     .navbar {
         font-size: 1.50rem;
     }
+    .logo {
+        margin: 10px auto;
+        max-height: 80%;
+        max-width: 200px;
+    }
 }
 
 /*-------------------------------------------- BODY */
@@ -72,16 +73,19 @@ body {
 
 section h1 {
     text-align: center;
+    visibility: hidden;
 }
 
 .mobile-spacing {
     margin: 75px;
 }
 
-/*-------------------------------------------- GALLERY */
-.space-col{
-   min-width:50px;
+/*-------------------------------------------- INDEX.HTML GALLERY */
+
+.space-col {
+    min-width: 50px;
 }
+
 #scrolling-wrapper {
     display: flex;
     flex-wrap: nowrap;
@@ -89,54 +93,20 @@ section h1 {
     -webkit-overflow-scrolling: touch;
     width: auto;
     white-space: nowrap;
-   /* margin-right:30px;*/
-    /*padding-bottom: 20%;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 15%;*/
 }
 
 .gallery-col {
     overflow-x: hidden;
 }
 
-.img-thumb {}
-
-.col-10 {
-    flex: 0 0 auto;
-    padding-right: 1px;
-    padding-left: 1px;
-}
-
-/*
-
-.col-12 {
-    flex: 0 0 auto;
-    padding-right: 2px;
-    padding-left: 2px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-}
-*/
-
 .col-11 {
     flex: 0 0 auto;
-    /*  margin-left:0.5px;
-   margin-right:0.5px;*/
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     overflow-x: hidden;
     overflow-y: hidden;
     max-height: 570px;
-    /*max-width:475px;*/
-}
-
-.col-12 img {
-    max-width: 100%;
 }
 
 .col-11 img {
@@ -144,9 +114,6 @@ section h1 {
     max-height: 150%;
     display: block;
     margin: auto;
-}
-.col-11:last-of-type{
-
 }
 
 .imagerow {
@@ -164,162 +131,33 @@ section h1 {
 
 #scrolling-wrapper img {
     vertical-align: middle;
-    /* max-height: 420px;*/
 }
 
 @media (min-width: 576px) {
-    .col-11 {
-        flex: 0 0 auto;
-        /*  margin-left:0.5px;
-   margin-right:0.5px;*/
+    #scrolling-wrapper {
         display: flex;
-        align-items: center;
+        overflow-x: initial;
         flex-wrap: wrap;
-        overflow-x: hidden;
-        overflow-y: hidden;
+    }
+    .gallery-col {
         max-height: 375px;
-        /*max-width:475px;*/
+        margin-bottom:15px;
     }
 }
 
 @media (min-width: 768px) {
-    .col-11 {
-        flex: 0 0 auto;
-        /*  margin-left:0.5px;
-   margin-right:0.5px;*/
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        overflow-x: hidden;
-        overflow-y: hidden;
+    .gallery-col {
         max-height: 325px;
-        /*max-width:475px;*/
     }
 }
 
 @media (min-width: 992px) {
-    .col-11 {
-        flex: 0 0 auto;
-        /*  margin-left:0.5px;
-   margin-right:0.5px;*/
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        overflow-x: hidden;
-        overflow-y: hidden;
+    .gallery-col {
         max-height: 375px;
-        /*max-width:475px;*/
     }
 }
 
-/*-------------------------------------------- MODAL */
-
-/**,
-*::before,
-*::after {
-  box-sizing: inherit; 
-}*/
-
-.autoModal.modal .modal-body {
-    max-height: 100%;
-}
-
-.modal.open {
-    display: -ms-flexbox!important;
-    display: flex!important;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    padding-right: 0!important
-}
-
-/*When the modal is triggered, the body class changes to .modal-open, allowing the modal to be displayed only after being triggered*/
-
-.modal-open .modal {
-    display: -ms-flexbox!important;
-    display: flex!important;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    padding-right: 0!important
-}
-
-.modal.show .modal-dialog {
-    margin: 2.5vh auto;
-    flex: 1 1 1px;
-    display: block;
-    width: auto;
-    height: auto;
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
-}
-
-.modal-header {
-    display: none;
-}
-
-.modal-footer {
-    display: none;
-}
-
-.modal-body {
-    flex: 1 1 auto;
-    padding: 15px;
-    position: relative;
-}
-
-.carousel {
-    flex: 1 1 auto;
-    position: relative;
-    height: auto;
-}
-
-.carousel-inner {
-    position: relative;
-    min-height: 300px;
-    height: auto;
-    max-height: 90vh;
-    overflow: auto;
-}
-
-.carousel-item {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-}
-
-.carousel-item.active {
-    height: auto;
-    display: block;
-}
-
-.modal .img-fluid {
-    width: 100%;
-    height: auto;
-    max-width: 100%;
-}
-
-.carousel-indicators {
-    display: none;
-}
-
-@media (min-width: 768px) {
-    .modal-dialog {
-        max-width: 80vw;
-        height: 80vh;
-        max-height: 80vh;
-    }
-    .carousel-inner {
-        /* height:577px;*/
-    }
-}
-
-/*-------------------------------------------- SHOP */
+/*-------------------------------------------- SHOP.HTML */
 
 .products {
     display: flex;
@@ -401,14 +239,38 @@ p {
     width: 100%;
 }
 
+@media (min-width: 576px) {
+    .shop {
+        margin-bottom: 30%;
+    }
+    .shop .row {
+        justify-content: space-between;
+    }
+    .section-wrapper {
+        margin-left: 9%;
+        margin-right: 9%;
+        margin-top: 2.5%;
+        margin-bottom: 2%;
+    }
+}
+
 @media screen and (max-width: 770px) {
     .right {
         float: left;
         width: 100%;
     }
+    .shop {
+        margin-bottom: 20%;
+    }
 }
 
-/*-------------------------------------------- CONTACT */
+@media (min-width: 992px) {
+    .shop {
+        margin-bottom: 10%;
+    }
+}
+
+/*-------------------------------------------- CONTACT.HTML */
 
 input[type="file"] {
     display: none;
@@ -463,85 +325,7 @@ input[type="file"] {
     font-size: 0.7rem;
 }
 
-/*-------------------------------------------- MEDIA QUERIES */
-
-@media (min-width: 576px) {
-    /* .carousel-item img {
-        height: 70%;
-    }*/
-    .gallery-col {
-        margin-top: 2%;
-    }
-    .shop {
-        margin-bottom: 30%;
-    }
-    .shop .row {
-        justify-content: space-between;
-    }
-    .section-wrapper {
-        margin-left: 9%;
-        margin-right: 9%;
-        margin-top: 2.5%;
-        margin-bottom: 2%;
-    }
-}
-
-@media (min-width: 768px) {
-    #scrolling-wrapper img {}
-    .shop {
-        margin-bottom: 20%;
-    }
-}
-
-@media (min-width: 992px) {
-    /* .carousel-item img {
-        height: 60%;
-    }*/
-    .shop {
-        margin-bottom: 10%;
-    }
-}
-
-/*-------------------------------------------- TESTING HORIZONTAL SCROLLING MOBILE-FIRST*/
-
-@media (min-width: 576px) {
-    #scrolling-wrapper {
-        display: flex;
-        overflow-x: initial;
-        flex-wrap: wrap;
-    }
-    #scrolling-wrapper img {}
-    .card {}
-    .logo {
-        margin: 10px auto;
-        max-height: 80%;
-        max-width: 200px;
-    }
-}
-
-@media (min-width: 768px) {
-    #scrolling-wrapper {
-        /*padding-bottom: 10%;
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-top: 5%;*/
-    }
-    #scrolling-wrapper img {}
-    .shop {
-        margin-bottom: 20%;
-    }
-}
-
-@media (min-width: 992px) {
-    /*  .carousel-item img {
-        height: 60%;
-    }*/
-    .shop {
-        margin-bottom: 10%;
-    }
-}
-
-/*-------------------------------------------- LANDING PAGE*/
+/*-------------------------------------------- LANDING.HTML*/
 
 .landing-container {
     background-image: url("../img/backgrounds/background-02.png");
