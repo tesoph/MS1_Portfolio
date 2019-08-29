@@ -152,10 +152,10 @@ section h1 {
 }
 
 /*-------------------------------------------- INDEX.HTML GALLERY */
-
+/*
 .mobile-spacing {
     height: 30px;
-}
+}*/
 
 .space-col {
     min-width: 50px;
@@ -189,10 +189,10 @@ section h1 {
     max-height: 110%;
     display: block;
 }
-
+/*
 .imagerow {
     margin-bottom: 5%;
-}
+}*/
 
 .hover-shadow {
     max-width: 100%;
@@ -205,7 +205,7 @@ section h1 {
 
 #scrolling-wrapper img {
     vertical-align: middle;
-    min-height: 570px;
+   /* min-height: 570px;*/
 }
 
 @media (min-width: 576px) {
