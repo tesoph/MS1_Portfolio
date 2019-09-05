@@ -16,6 +16,56 @@ DARK THEME
     --main-footer-txt-color: white;
 */
 }
+/*-------------------------------------------- HTML, BODY */
+
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+body {
+    background-color: white;
+    color: var(--main-txt-color);
+    font-family: 'Inconsolata', monospace;
+}
+
+.section-wrapper {
+   /* margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-top: 7.5%;
+    margin-bottom: 15%;*/
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    margin-bottom:50px;
+    background-color:var(--main-bg-color);
+}
+
+section h1 {
+    text-align: center;
+    visibility: hidden;
+}
+
+@media (min-width: 576px) {
+    .section-wrapper {
+      /*  margin-top: 7.5%;
+        margin-bottom: 10%;*/
+        padding-left: 9%;
+        padding-right: 9%;
+        padding-top: 6%;
+        padding-bottom: 6%;
+       /* margin-left: 9%;
+        margin-right: 9%;
+        margin-top: 5%;
+        margin-bottom: 5%;*/
+    }
+}
+
 
 /*-------------------------------------------- NAVIGATION BAR */
 
@@ -26,6 +76,8 @@ DARK THEME
     text-transform: uppercase;
     flex-direction: column; 
     background-color:white;
+    padding-bottom:5%;
+    padding-top:5%;
 }
 
 .logo {
@@ -108,13 +160,14 @@ ul.dropdown-menu.show {
 
 /*-------------------------------------------- FOOTER */
 
+/*
 .footer-space {
     height: 100px;
-    /*background-color:white;*/
-}
+    background-color:white;
+}*/
 
 .footer {
-    /*43.5*/
+    height:50px;
     background-color: white;
     color: var(--main-footer-txt-color);
     padding-top: 3%;
@@ -139,47 +192,18 @@ ul.dropdown-menu.show {
 }
 @media (min-width: 768px) {
     .footer {
-        
         padding-top: 1%;
         padding-bottom: 1%;
     }
 }
 
-/*-------------------------------------------- BODY */
-
-body {
-    background-color: var(--main-bg-color);
-    color: var(--main-txt-color);
-    font-family: 'Inconsolata', monospace;
-}
-
-.section-wrapper {
-    margin-left: 2.5%;
-    margin-right: 2.5%;
-    margin-top: 7.5%;
-    margin-bottom: 15%;
-}
-
-section h1 {
-    text-align: center;
-    visibility: hidden;
-}
-
-@media (min-width: 576px) {
-    .section-wrapper {
-        margin-top: 7.5%;
-        margin-bottom: 10%;
-    }
-}
 /*-------------------------------------------- INDEX.HTML GALLERY */
 /*
-.mobile-spacing {
-    height: 30px;
-}*/
-
 .space-col {
-    min-width: 50px;
-}
+    position: relative;
+    padding-left: 30px;
+    padding-right:30px;
+}*/
 
 #scrolling-wrapper {
     display: flex;
@@ -187,7 +211,7 @@ section h1 {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     width: auto;
-    white-space: nowrap;
+    /*white-space: nowrap;*/
 }
 
 .gallery-col {
@@ -250,12 +274,6 @@ section h1 {
 .products {
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: 15%;
-    padding-left: 3.5%;
-    padding-right: 3.5%;
-    padding-top: 2%;
-    margin-top: 5%;
-    margin-bottom: 20%;
 }
 
 .product-card {
@@ -395,10 +413,6 @@ h5 {
         justify-content: space-between;
     }
     .section-wrapper {
-        margin-left: 9%;
-        margin-right: 9%;
-        margin-top: 5%;
-        margin-bottom: 5%;
     }
 }
 
@@ -484,3 +498,13 @@ input[type="file"] {
 .landing-container .dropdown-item {
     background: black;
 }
+
+/*
+CSS Debugging from https://blog.wernull.com/2013/04/debug-ghost-css-elements-causing-unwanted-scrolling/
+
+* {
+    background: #000 !important;
+    color: #0f0 !important;
+    outline: solid #f00 1px !important;
+  } 
+*/
