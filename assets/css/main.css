@@ -48,6 +48,8 @@ body {
 
 section h1 {
     text-align: center;
+    margin-bottom:3%;
+    text-transform: uppercase;
     /*visibility: hidden;*/
 }
 
@@ -87,6 +89,10 @@ section h1 {
 
 button:focus {
     outline: 5px auto grey;
+}
+
+.navbar-toggler {
+    margin-top:2%;
 }
 
 .nav {
@@ -139,10 +145,11 @@ button:focus {
 
 ul.dropdown-menu.show {
    max-height: 300px;
-    opacity: 1;
+    /*opacity: 1;*/
     padding: 0px;
     margin: 0px;
     background-color:white;
+    
 }
 
 .dropdown-menu .dropdown-item .nav-link:hover {
@@ -307,6 +314,7 @@ ul.dropdown-menu.show {
 
 .product-info {
     text-align:center;
+    margin-top:10px;
 }
 
 .product-image img {
@@ -371,7 +379,7 @@ h4 {
 /*-------------------------------------------- CONTACT.HTML */
 
 .center-form{
-    margin-top:20px;
+    margin-top:25px;
 }
 input[type="file"] {
     display: none;
