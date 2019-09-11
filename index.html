@@ -12,11 +12,9 @@
 
     <!-- Bootstrap core CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font-Awesome CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
-        type="text/css">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
-        type="text/css" />
+    <!-- Font-Awesome v5.10.2 CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/v4-shims.css">
     <!--Fancybox CSS-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <!-- Custom CSS -->
@@ -25,120 +23,106 @@
 </head>
 
 <body>
-    <!-- Page wrapper -->
-   <div class="page-container">
-        <!-- Header -->
-
-        <header>
-            <!-- Navigation -->
-            <nav class="navbar navbar-light navbar-expand-md" role="navigation">
-                <div><a href="index.html"><img class="img-fluid logo" src="assets/img/logo/logo2.png" alt="logo"></a>
-                </div>
-
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
-                    aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div>
-                    <div class="collapse navbar-collapse" id="navbarToggler">
-                        <ul class="nav justify-content-center">
-                            <li class="nav-item">
-                                <a class="nav-link active" href="index.html">Gallery</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="about.html">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="shop.html">Shop</a>
-                            </li>
-
-                            <li class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Contact</a>
-                                <ul class="dropdown-menu">
-                                    <li class="nav-link dropdown-item"> <a  class="nav-link" href="contact.html">Contact
-                                            me</a></li>
-                                    <li class="nav-link dropdown-item"><a  class="nav-link" href="links.html">Links</a>
-                                    </li>
-                                </ul>
-
-                            </li>
-
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-            <!-- End navigation -->
-        </header>
-        <!-- End header -->
-
-        <!-- Portfolio section -->
-        <section class="section-wrapper">
-
-            <h1>Gallery</h1>
-
-            <div class="row " id="scrolling-wrapper">
-                <div class="col-11 col-sm-6 col-md-4 col-lg-3 gallery-col">
-                    <a data-fancybox="gallery" href="assets/img/img1-large.jpg"><img class="img-thumb"
-                            src="assets/img/img1-large.jpg"></a>
-                </div>
-                <div class="col-11 col-sm-6 col-md-4 col-lg-3 gallery-col">
-                    <a data-fancybox="gallery" href="assets/img/img2-large.jpg"><img
-                            src="assets/img/img2-large.jpg"></a>
-                </div>
-                <div class="col-11 col-sm-6 col-md-4 col-lg-3 gallery-col">
-                    <a data-fancybox="gallery" href="assets/img/img3-large.jpg"><img
-                            src="assets/img/img3-large.jpg"></a>
-                </div>
-                <div class="col-11 col-sm-6 col-md-4 col-lg-3 gallery-col">
-                    <a data-fancybox="gallery" href="assets/img/img4-large.jpg"><img
-                            src="assets/img/img4-large.jpg"></a>
-                </div>
-                <div class="col-11 col-sm-6 col-md-4 col-lg-3 gallery-col">
-                    <a data-fancybox="gallery" href="assets/img/img5-large.jpg"><img
-                            src="assets/img/img5-large.jpg"></a>
-                </div>
-                <div class="col-11 col-sm-6 col-md-4 col-lg-3 gallery-col">
-                    <a data-fancybox="gallery" href="assets/img/maze01.png"><img
-                            src="assets/img/maze01.png"></a>
-                </div>
-                <div class="col-11 col-sm-6 col-md-4 col-lg-3 gallery-col">
-                    <a data-fancybox="gallery" href="assets/img/rose01.png"><img
-                            src="assets/img/rose01.png"></a>
-                </div>
-                <div class="col-11 col-sm-6 col-md-4 col-lg-3 gallery-col">
-                    <a data-fancybox="gallery" href="assets/img/audio01.png"><img
-                            src="assets/img/audio01.png"></a>
-                </div>
-                
-                <div class="col-4">
-                  <!--col-4 to give visual indication of the end of horizontal scrolling gallery in mobile view-->
-                </div>
+    <!-- Header -->
+    <header>
+        <!-- Navigation -->
+        <nav class="navbar navbar-light navbar-expand-md" role="navigation">
+            <div>
+                <a href="index.html"><img class="img-fluid logo" src="assets/img/logo/logo2.png" alt="logo"></a>
             </div>
-         
-        </section>
-        <!-- End portfolio section -->
 
-        <!-- Footer -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
+                aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarToggler">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shop.html">Shop</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Contact</a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-link dropdown-item"> <a class="nav-link" href="contact.html">Contact
+                                    me</a></li>
+                            <li class="nav-link dropdown-item"><a class="nav-link" href="links.html">Links</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+        <!-- End navigation -->
+    </header>
+    <!-- End header -->
+
+    <!-- Portfolio section -->
+    <section class="section-wrapper">
+        <h1>Gallery</h1>
+        <div class="row " id="scrolling-wrapper">
+            <div class="col-11 col-sm-6 col-md-4 col-lg-3 gallery-col">
+                <a data-fancybox="gallery" href="assets/img/img1-large.jpg"><img class="img-thumb"
+                        src="assets/img/thumbnails/img1-thumbnail.jpg"></a>
+            </div>
+            <div class="col-11 col-sm-6 col-md-4 col-lg-3 gallery-col">
+                <a data-fancybox="gallery" href="assets/img/img2-large.jpg"><img
+                        src="assets/img/thumbnails/img2-thumbnail.jpg"></a>
+            </div>
+            <div class="col-11 col-sm-6 col-md-4 col-lg-3 gallery-col">
+                <a data-fancybox="gallery" href="assets/img/img3-large.jpg"><img
+                        src="assets/img/thumbnails/img3-thumbnail.jpg"></a>
+            </div>
+            <div class="col-11 col-sm-6 col-md-4 col-lg-3 gallery-col">
+                <a data-fancybox="gallery" href="assets/img/img4-large.jpg"><img
+                        src="assets/img/thumbnails/img4-thumbnail.jpg"></a>
+            </div>
+            <div class="col-11 col-sm-6 col-md-4 col-lg-3 gallery-col">
+                <a data-fancybox="gallery" href="assets/img/img5-large.jpg"><img
+                        src="assets/img/thumbnails/img5-thumbnail.jpg"></a>
+            </div>
+            <div class="col-11 col-sm-6 col-md-4 col-lg-3 gallery-col">
+                <a data-fancybox="gallery" href="assets/img/maze01.png"><img src="assets/img/maze01.png"></a>
+            </div>
+            <div class="col-11 col-sm-6 col-md-4 col-lg-3 gallery-col">
+                <a data-fancybox="gallery" href="assets/img/rose01.png"><img src="assets/img/rose01.png"></a>
+            </div>
+            <div class="col-11 col-sm-6 col-md-4 col-lg-3 gallery-col">
+                <a data-fancybox="gallery" href="assets/img/audio01.png"><img src="assets/img/audio01.png"></a>
+            </div>
+
+            <div class="col-4">
+                <!--col-4 to give visual indication of the end of horizontal scrolling gallery in mobile view-->
+            </div>
+        </div>
+    </section>
+    <!-- End portfolio section -->
+
+    <!-- Footer -->
     <footer class="footer page-footer">
         <!-- Footer Elements -->
         <div class="container-fluid ">
-
             <!-- Grid row-->
             <div class="row ">
-
                 <!-- Grid column -->
                 <div class="col-8 footercol">
-
-                    <a>
+                    <a href="http://google.com" target="_blank">
+                        <i class="fab fa-github fa-lg mr-md-5 mr-3 fa-2x "> </i>
+                    </a>
+                    <a href="http://google.com" target="_blank">
                         <i class="fa fa-facebook fa-lg mr-md-5 mr-3 fa-2x "> </i>
                     </a>
                     <!-- Twitter -->
-                    <a>
+                    <a href="http://google.com" target="_blank">
                         <i class="fa fa-twitter fa-lg mr-md-5 mr-3 fa-2x "> </i>
                     </a>
-
                     <!--Linkedin -->
                     <!---
                         fab icon not showing up: related to font weight? fab needs 400 fa needs 900
@@ -146,14 +130,13 @@
                             <i class="fab fa-linkedin fa-lg mr-md-5 mr-3 fa-2x " style="font-weight:400; "></i>
                         </a>-->
                     <!--Instagram-->
-                    <a>
+                    <a href="http://google.com" target="_blank">
                         <i class="fa fa-instagram fa-lg mr-md-5 mr-3 fa-2x "> </i>
                     </a>
                     <!--Pinterest-->
-                    <a>
+                    <a href="http://google.com" target="_blank">
                         <i class="fa fa-pinterest fa-lg fa-2x "> </i>
                     </a>
-
                 </div>
                 <!-- Grid column -->
                 <div class="col-4 text-right ">
@@ -161,19 +144,9 @@
                 </div>
             </div>
             <!-- Grid row-->
-
-        </div>
-
-        </div>
-
-
         </div>
     </footer>
     <!--End footer-->
-
-    </div>
-
-    <!-- End page wrapper -->
 
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js "
