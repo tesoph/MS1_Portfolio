@@ -48,9 +48,14 @@ body {
 
 section h1 {
     text-align: center;
-    margin-bottom: 3%;
-    text-transform: uppercase;
+    /*margin-bottom: 3%;*/
+   /* text-transform: uppercase;*/
     /*visibility: hidden;*/
+   /* display:none;*/
+}
+section h2{
+    text-align:center;
+   /* margin-bottom:3%;*/
 }
 
 @media (min-width: 576px) {
@@ -59,8 +64,8 @@ section h1 {
         margin-bottom: 10%;*/
         padding-left: 9%;
         padding-right: 9%;
-        padding-top: 2%;
-        padding-bottom: 4%;
+        padding-top: 3%;
+        padding-bottom: 3%;
         /* margin-left: 9%;
         margin-right: 9%;
         margin-top: 5%;
@@ -192,11 +197,11 @@ ul.dropdown-menu.show {
 
 /*-------------------------------------------- FOOTER */
 
-i.fa, i.fab {
+.footer i.fa, i.fab {
     color: #8E8D8A;
 }
 
-i.fa:hover, i.fab:hover {
+.footer i.fa:hover, i.fab:hover {
     color: black;
 }
 
@@ -385,6 +390,17 @@ h4 {
 @media (min-width: 992px) {}
 
 /*-------------------------------------------- CONTACT.HTML */
+.contact-info{
+    text-align:center;
+}
+.col i{
+    display: inline-block;
+    width: 100%;
+    text-align:center;
+}
+hr{
+    border-width:2.5px;
+}
 
 .center-form {
     margin-top: 25px;
@@ -433,6 +449,7 @@ input[type="file"] {
 label {
     margin-bottom: 0px;
 }
+
 
 .custom-file-upload:hover {
     box-shadow: 0px 0px 10px #4bc6ff;

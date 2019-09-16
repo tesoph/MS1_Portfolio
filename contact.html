@@ -13,18 +13,13 @@
 
     <!-- Bootstrap core CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font-Awesome CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
-        type="text/css" />
+    <!-- Font-Awesome v5.10.2 CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/v4-shims.css">
+    <!--Fancybox CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <!-- Custom CSS -->
     <link href="assets/css/main.css" rel="stylesheet">
-    <link href="assets/css/modal.css" rel="stylesheet">
-    <!--for brands icon fontawesome-->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/brands.js"
-        integrity="sha384-sCI3dTBIJuqT6AwL++zH7qL8ZdKaHpxU43dDt9SyOzimtQ9eyRhkG3B7KMl6AO19"
-        crossorigin="anonymous"></script>
-
 
 
 
@@ -33,144 +28,172 @@
 <body>
     <!-- PAGE WRAPPER-->
     <div class="page-container">
-       <!-- Header -->
+        <!-- Header -->
 
-       <header>
-        <!-- Navigation -->
-        <nav class="navbar navbar-light navbar-expand-md" role="navigation">
-            <div><a href="index.html"><img class="img-fluid logo" src="assets/img/logo/logo2.png" alt="logo"></a>
-            </div>
-
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
-                aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div>
-                <div class="collapse navbar-collapse" id="navbarToggler">
-                    <ul class="nav justify-content-center">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="index.html">Gallery</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="shop.html">Shop</a>
-                        </li>
-
-                        <li class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Contact</a>
-                            <ul class="dropdown-menu">
-                                <li class="nav-link dropdown-item"> <a  class="nav-link" href="contact.html">Contact
-                                        me</a></li>
-                                <li class="nav-link dropdown-item"><a  class="nav-link" href="links.html">Links</a>
-                                </li>
-                            </ul>
-
-                        </li>
-
-                    </ul>
+        <header>
+            <!-- Navigation -->
+            <nav class="navbar navbar-light navbar-expand-md" role="navigation">
+                <div><a href="index.html"><img class="img-fluid logo" src="assets/img/logo/logo2.png" alt="logo"></a>
                 </div>
-            </div>
-        </nav>
-        <!-- End navigation -->
-    </header>
-    <!-- End header -->
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
+                    aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div>
+                    <div class="collapse navbar-collapse" id="navbarToggler">
+                        <ul class="nav justify-content-center">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="index.html">Gallery</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="shop.html">Shop</a>
+                            </li>
+                            <li class="nav-item">
+                                    <a class="nav-link" href="contact.html">Contact</a>
+                                </li>
+
+                           
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- End navigation -->
+        </header>
+        <!-- End header -->
         <!-- PAGE CONTENT-->
         <section class="section-wrapper">
-            
-  
-                <div class="contact-heading">
-
+            <div class="container">
+                <div class="col">
+                    <h1>Contact</h1>
+                   <!--
+                        <i class="far fa-star fa-2x"></i>-->
+                </div>
+            </div>
+            <hr>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-4 contact-info">
+                        <i class="fas fa-at fa-2x"></i>
+                        <h4>Email:</h4>
+                        <p>hello@example.com</p>
+                    </div>
+                    <div class="col-12 col-sm-4 contact-info">
+                        <i class="fa fa-phone fa-2x"></i>
+                        <h4>Phone Number:</h4>
+                        <p>+353 87 123 4567</p>
+                    </div>
+                    <div class="col-12 col-sm-4 contact-info">
+                        <i class="fas fa-envelope fa-2x"></i>
+                        <h4>Address:</h4>
+                        <p>123 Street,
+                            City,
+                            County,
+                            Ireland
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <!--
+            <div class="contact-heading">
                     <h1>Contact Form</h1>
                     <h3 class=" uppercase text-center">Do you have a commission or collaboration in mind?</h3>
                     <h5 class="uppercase text-center">Let's work together!</h5>
                 </div>
-                
-                <div class="col">
-                    <div class="center-form">
-                        <form method="post" id="contactform">
-                            <div class="row ">
+            -->
+            <div class="col">
+                <div class="center-form">
+                    <form method="post" id="contactform">
+                        <div class="row ">
                             <div class="col-12 col-sm-6">
-                            <input type="text" name="name" id="fullname" class="form-control contact" placeholder="Name" required />
-                        </div>
-                        <div class="col-12 col-sm-6">
-                            <input type="email" name="email" id="emailaddress" class="form-control contact" placeholder="Email" required />
-                        </div>
-                    </div>
-                    <input type="text" name="subject" id="subject" class="form-control contact" placeholder="Subject" required/>
-                            <textarea rows="5" name="description" id="description" class="form-control contact" placeholder="Description" required></textarea>
-                       
-                            
-                            <label class="custom-file-upload">
-                                    <input type="file" name="fileToUpload" class=""/>
-                                    <span>Upload image</span>
-                                </label>
-                           
-                            <div class="form-row text-center">
-                                <div class=" col">
-                                    <button type="submit" class="btn btn-secondary ">Send Message</button>
-                                </div>
+                                <input type="text" name="name" id="fullname" class="form-control contact"
+                                    placeholder="Name" required />
                             </div>
-                        </form>
+                            <div class="col-12 col-sm-6">
+                                <input type="email" name="email" id="emailaddress" class="form-control contact"
+                                    placeholder="Email" required />
+                            </div>
+                        </div>
+                        <input type="text" name="subject" id="subject" class="form-control contact"
+                            placeholder="Subject" required />
+                        <textarea rows="5" name="description" id="description" class="form-control contact"
+                            placeholder="Description" required></textarea>
 
-                    </div>
-    
+
+                        <label class="custom-file-upload">
+                            <input type="file" name="fileToUpload" class="" />
+                            <span>Upload Image</span>
+                        </label>
+
+                        <div class="form-row text-center">
+                            <div class=" col">
+                                <button type="submit" class="btn btn-secondary ">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+
                 </div>
-         
-    </section>
- <!-- Footer -->
- <footer class="footer page-footer">
-    <!-- Footer Elements -->
-    <div class="container-fluid ">
 
-        <!-- Grid row-->
-        <div class="row ">
+            </div>
 
-            <!-- Grid column -->
-            <div class="col-8 footercol">
+        </section>
+        <!-- Footer -->
+        <footer class="footer page-footer">
+            <!-- Footer Elements -->
+            <div class="container-fluid ">
 
-                <a>
-                    <i class="fa fa-facebook fa-lg mr-md-5 mr-3 fa-2x "> </i>
-                </a>
-                <!-- Twitter -->
-                <a>
-                    <i class="fa fa-twitter fa-lg mr-md-5 mr-3 fa-2x "> </i>
-                </a>
+                <!-- Grid row-->
+                <div class="row ">
 
-                <!--Linkedin -->
-                <!---
+                    <!-- Grid column -->
+                    <div class="col-8 footercol">
+
+                        <a>
+                            <i class="fa fa-facebook fa-lg mr-md-5 mr-3 fa-2x "> </i>
+                        </a>
+                        <!-- Twitter -->
+                        <a>
+                            <i class="fa fa-twitter fa-lg mr-md-5 mr-3 fa-2x "> </i>
+                        </a>
+
+                        <!--Linkedin -->
+                        <!---
                     fab icon not showing up: related to font weight? fab needs 400 fa needs 900
                     <a>
                         <i class="fab fa-linkedin fa-lg mr-md-5 mr-3 fa-2x " style="font-weight:400; "></i>
                     </a>-->
-                <!--Instagram-->
-                <a>
-                    <i class="fa fa-instagram fa-lg mr-md-5 mr-3 fa-2x "> </i>
-                </a>
-                <!--Pinterest-->
-                <a>
-                    <i class="fa fa-pinterest fa-lg fa-2x "> </i>
-                </a>
+                        <!--Instagram-->
+                        <a>
+                            <i class="fa fa-instagram fa-lg mr-md-5 mr-3 fa-2x "> </i>
+                        </a>
+                        <!--Pinterest-->
+                        <a>
+                            <i class="fa fa-pinterest fa-lg fa-2x "> </i>
+                        </a>
+
+                    </div>
+                    <!-- Grid column -->
+                    <div class="col-4 text-right ">
+                        © 2019 Copyright Ray
+                    </div>
+                </div>
+                <!-- Grid row-->
 
             </div>
-            <!-- Grid column -->
-            <div class="col-4 text-right ">
-                © 2019 Copyright Ray
-            </div>
-        </div>
-        <!-- Grid row-->
-
-    </div>
 
     </div>
 
 
     </div>
-</footer>
-<!--End footer-->
+    </footer>
+    <!--End footer-->
     </div>
 
     <!-- SCRIPTS -->
