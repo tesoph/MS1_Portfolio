@@ -1,6 +1,8 @@
 /*-------------------------------------------- FONTS */
 
-@import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Inconsolata|Lato');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
 /*-------------------------------------------- COLORS */
 
 :root {
@@ -21,7 +23,7 @@ DARK THEME
 
 html, body {
     width: 100%;
-   /* height: 100%;*/
+    height: 100%;
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
@@ -34,33 +36,43 @@ body {
 }
 
 .section-wrapper {
-    /* margin-left: 2.5%;
-    margin-right: 2.5%;
-    margin-top: 7.5%;
-    margin-bottom: 15%;*/
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 5%;
-    padding-bottom: 5%;
     /*margin-bottom:50px; To leave space for .footer{height:50px;}*/
     background-color: var(--main-bg-color);
+    padding:0%;
+}
+
+.container{
+   /* background-color:white;*/
+ /*  background-color:#e6e6e6;*/
+    padding:0px;
 }
 
 section h1 {
     text-align: center;
-    /*margin-bottom: 3%;*/
-   /* text-transform: uppercase;*/
-    /*visibility: hidden;*/
-  display:none;
+    width:100%;
+    background-color:#bfbfbf;
+    text-transform: uppercase;
+    font-family: "Lato", sans-serif;
+    font-size:3em;
+    font-weight:700;
+    letter-spacing: 0.5rem;
+    color:black;
+    padding: 15px;
 }
-.banner h1{
-    display:block;
-}
+
 section h2{
+    font-family: "Lato", sans-serif;
     text-align:center;
+    background-color:#cccccc;
+    letter-spacing: 0.25rem;
+    color:		#4C4C4C;
    /* margin-bottom:3%;*/
 }
 
+button:hover{
+    box-shadow: 0px 0px 10px #4bc6ff;
+    opacity: 1;
+}
 @media (min-width: 576px) {
     .section-wrapper {
         /*  margin-top: 7.5%;
@@ -73,6 +85,12 @@ section h2{
         margin-right: 9%;
         margin-top: 5%;
         margin-bottom: 5%;*/
+    }
+    section h1{
+        background-color:transparent;
+    }
+  section h2{
+        background-color:transparent;
     }
 }
 
@@ -209,21 +227,20 @@ ul.dropdown-menu.show {
 }
 
 .footer {
-    height: 50px;
+   /* height: 50px;*/
     background-color: white;
     color: var(--main-footer-txt-color);
     padding-top: 3%;
     padding-bottom: 3%;
 }
-
+/*
 .footer ul li {
     display: inline-block;
-}
-
+}*/
+/*
 .footer a {
     color: black;
-}
-
+}*/
 .footercol {
     display: flex;
     align-items: center;
@@ -231,13 +248,14 @@ ul.dropdown-menu.show {
     /*To adjust icon size*/
 }
 
+/*
 .text-right {
     font-size: 0.7rem;
-}
+}*/
 
 @media (min-width: 768px) {
     .footer {
-        height:70px;
+        /*height:70px;*/
         padding-top: 2%;
         padding-bottom: 2%;
     }
@@ -258,6 +276,10 @@ ul.dropdown-menu.show {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     width: auto;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
     /*white-space: nowrap;*/
 }
 
@@ -279,13 +301,12 @@ ul.dropdown-menu.show {
     display: block;
 }
 
-/*From themeforest mono*/
-
 .gallery-col a:hover {
+    /*Blur effect on a:hover from themeforest mono*/
     -webkit-transform: scale(1.04);
     transform: scale(1.04);
     -webkit-filter: blur(1.5px);
-    filter: blur(1.5px)
+    filter: blur(1.5px);
 }
 
 /*
@@ -325,6 +346,13 @@ ul.dropdown-menu.show {
     }
 }
 
+@media (min-width: 2560px) {
+    .gallery-col {
+        /*max-width to prevent images not filling columns on 4k viewports */
+        max-width: 400px;
+    }
+}
+
 /*-------------------------------------------- SHOP.HTML */
 .section-wrapper-shop h1{
     position:absolute;
@@ -335,17 +363,20 @@ ul.dropdown-menu.show {
     font-weight:700;
     width:100%;
     margin:auto;
-    background-color:black;
+    /*
+    background-color:black;*/
+    background-color:#dfdfdf;
     color:white;
     padding: 10px;
 
 }
+.shop{
+    background-color:white;
+}
 .banner{
-
-   position:relative;
-    min-width: 100%;
-    min-height: 500px;
-    background-image: url("../img/shop/banner.jpg");
+    
+    height:300px;
+    background-image: url("../img/shop/sale1.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -457,7 +488,7 @@ h4 {
         /* position:relative;*/
          min-width: 100%;
          min-height: 500px;
-         background-image: url("../img/shop/banner.jpg");
+         background-image: url("../img/shop/sale1.png");
          background-size: cover;
          background-repeat: no-repeat;
          background-position: 50% 50%;
@@ -477,6 +508,7 @@ h4 {
 /*-------------------------------------------- CONTACT.HTML */
 .contact-info{
     text-align:center;
+    margin-top:2rem;
 }
 .col i{
     display: inline-block;
@@ -489,6 +521,7 @@ hr{
 
 .center-form {
     margin-top: 25px;
+    padding-bottom:25px;
 }
 
 input[type="file"] {
@@ -547,7 +580,10 @@ label {
         text-align: left;
     }
 }
-
+/*ABOUT.HTML*/
+.about-paragraph{
+padding:20px;
+}
 /*-------------------------------------------- LANDING.HTML*/
 
 .landing-container {
