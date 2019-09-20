@@ -47,6 +47,10 @@ body {
     padding:0px;
 }
 
+.container-fluid{
+    padding:0px;
+}
+
 section h1 {
     text-align: center;
     width:100%;
@@ -377,14 +381,14 @@ ul.dropdown-menu.show {
 .shop{
     background-color:white;
 }
+
 .banner{
-    
+    background:black; /*black background to account for image resizing at different viewports*/
     height:300px;
     background-image: url("../img/shop/banner-mobile.png");
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    /*margin-top: 20px;*/
 }
 
 .container-shop{
@@ -489,15 +493,8 @@ h4 {
 
 @media (min-width: 576px) {
     .banner{
-        /* position:relative;*/
-         min-width: 100%;
-         min-height: 500px;
-         background-image: url("../img/shop/banner-large.png");
-         background-size: cover;
-         background-repeat: no-repeat;
-         background-position: 50% 50%;
-         /*margin-top: 20px;*/
-     }
+        background-image: url("../img/shop/banner-large.png");
+    }
 }
 
 @media (min-width: 768px) {
@@ -507,7 +504,12 @@ h4 {
     }
 }
 
-@media (min-width: 992px) {}
+@media (min-width: 2560px) {
+    .banner{
+         min-height: 700px;
+         background-image: url("../img/shop/banner-xlarge.png");
+     }
+}
 
 /*-------------------------------------------- CONTACT.HTML */
 .contact-info{
