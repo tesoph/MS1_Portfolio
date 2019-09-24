@@ -36,14 +36,12 @@ body {
 }
 
 .section-wrapper {
-    /*margin-bottom:50px; To leave space for .footer{height:50px;}*/
+    /*margin-bottom:50px; To leave space for footer{height:50px;}*/
     background-color: var(--main-bg-color);
     padding:0%;
 }
 
 .container{
-   /* background-color:white;*/
- /*  background-color:#e6e6e6;*/
     padding:0px;
 }
 
@@ -51,7 +49,7 @@ body {
     padding:0px;
 }
 
-section h1 {
+h1 {
     text-align: center;
     width:100%;
     background-color:#bfbfbf;
@@ -65,13 +63,12 @@ section h1 {
     margin:0px;
 }
 
-section h2{
+h2{
     font-family: "Lato", sans-serif;
-    text-align:center;
+    text-align: center;
     background-color:#cccccc;
     letter-spacing: 0.25rem;
-    color:		#4C4C4C;
-   /* margin-bottom:3%;*/
+    color: #4C4C4C;
 }
 
 button:hover{
@@ -93,12 +90,12 @@ button:hover{
         margin-bottom: 5%;*/
     }
 
-    section h1{
-        background-color:transparent;
+   h1{
+        background-color:white;
     }
 
-  section h2{
-        background-color:transparent;
+   h2{
+        background-color:	#F7F7F7;
     }
 }
 
@@ -362,25 +359,6 @@ ul.dropdown-menu.show {
 }
 
 /*-------------------------------------------- SHOP.HTML */
-.section-wrapper-shop h1{
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-250%);
-    font-size:3em;
-    font-weight:700;
-    width:100%;
-    margin:auto;
-    /*
-    background-color:black;*/
-    background-color:#dfdfdf;
-    color:white;
-    padding: 10px;
-
-}
-.shop{
-    background-color:white;
-}
 
 .banner{
     background:black; /*black background to account for image resizing at different viewports*/
@@ -391,97 +369,15 @@ ul.dropdown-menu.show {
     background-position: 50% 50%;
 }
 
-.container-shop{
-    padding:160px;
-}
-
-.container-shop h1{
-    font-size:3em;
-    font-weight:700;
-    width:100%;
-    margin:auto;
-    background-color:black;
-    color:white;
-    padding: 20px;
-}
-.section-wrapper-shop {
-    /* margin-left: 2.5%;
-    margin-right: 2.5%;
-    margin-top: 7.5%;
-    margin-bottom: 15%;*/
-    padding-left: 0%;
-    padding-right: 0%;
-    padding-top: 0%;
-    padding-bottom: 0%;
-    /*margin-bottom:50px; To leave space for .footer{height:50px;}*/
-  /* background-color: var(--main-bg-color);*/
-   background-color:white;
-}
-
-@media (min-width: 576px) {
-    .section-wrapper-shop {
-        /*  margin-top: 7.5%;
-        margin-bottom: 10%;*/
-        padding-left: 0%;
-        padding-right: 0%;
-        padding-top: 0%;
-        padding-bottom: 0%;
-        /* margin-left: 9%;
-        margin-right: 9%;
-        margin-top: 5%;
-        margin-bottom: 5%;*/
-    }
-}
-
-.product-info {
-    text-align: center;
-    margin-top: 10px;
-}
-
-.product-image img {
-    max-width: 100%;
-    /*   max-height: 600px;*/
-}
-
 .shop-col {
     padding-top: 5%;
     padding-bottom: 5%;
-  /*  margin-left:5px;
-    margin-right:5px;*/
-    /*max-height:800px;*/
-    /*background-color: #8E8D8A;*/
-}
-
-h4 {
-    font-weight: 600;
-}
-
-.thumbnail {
-    opacity: 1.00;
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
-}
-
-.thumbnail:hover {
-    opacity: 1.00;
-    box-shadow: 0px 0px 10px #4bc6ff;
-}
-
-/*
-.shop img {
-    object-fit: contain;
-    width: 100%;
-}*/
-
-.shop-col {
     overflow-x: visible;
     overflow-y: visible;
-    /* border:1px black solid;*/
-    /*margin-bottom: 20px;*/
-    /*margin-left: 2.5px;
-    margin-right:2.5px;*/
-    /*background-color:	#E8E8E8;*/
-  /*  background-color: white;*/
+}
+
+.shop-col img {
+    max-width: 100%;
 }
 
 .shop-col img:hover {
@@ -491,6 +387,11 @@ h4 {
     filter: blur(1.5px)
 }
 
+.product-info {
+    text-align: center;
+    margin-top: 10px;
+}
+
 @media (min-width: 576px) {
     .banner{
         background-image: url("../img/shop/banner-large.png");
@@ -498,10 +399,6 @@ h4 {
 }
 
 @media (min-width: 768px) {
-    .shop-col {
-       /* padding-bottom: 2%;
-        padding-top: 2%;*/
-    }
 }
 
 @media (min-width: 2560px) {
