@@ -122,8 +122,8 @@ button:focus {
 
 .navbar-toggler {
     margin-top: 2%;
-    background: black !important;
-    color:white !important;
+    background: #858585 !important;
+    color: white !important;
 }
 
 .nav {
@@ -404,6 +404,29 @@ ul.dropdown-menu.show {
 .product-info {
     text-align: center;
     margin-top: 10px;
+}
+
+.product-info h4 {
+    color: black;
+}
+
+.product-info .btn {
+    color:black;
+    background-color: #f2f2f2;
+    border: 3px solid black;
+}
+
+.product-info .size {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 150px;
+}
+
+.product-info .size h5:hover {
+    color: black;
+    font-weight: bold;
+    font-size: 1.4em;
 }
 
 @media (min-width: 576px) {
