@@ -122,6 +122,8 @@ button:focus {
 
 .navbar-toggler {
     margin-top: 2%;
+    background: black !important;
+    color:white !important;
 }
 
 .nav {
