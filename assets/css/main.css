@@ -392,6 +392,7 @@ ul.dropdown-menu.show {
 
 .shop-col img {
     max-width: 100%;
+    height:450px;
 }
 
 .shop-col img:hover {
@@ -402,6 +403,7 @@ ul.dropdown-menu.show {
 }
 
 .product-info {
+    height:140px;
     text-align: center;
     margin-top: 10px;
 }
@@ -423,10 +425,10 @@ ul.dropdown-menu.show {
     width: 150px;
 }
 
-.product-info .size h5:hover {
-    color: black;
+.product-info .size h5:hover{
+    color: red;
     font-weight: bold;
-    font-size: 1.4em;
+    
 }
 
 @media (min-width: 576px) {
@@ -493,10 +495,8 @@ input[type="file"] {
     color: black;
     margin-bottom: 1rem;
     padding: .375rem .75rem;
-    /*  height: calc(1.5em + .75rem +2px);*/
     text-align: center;
     font-size: 16px;
-    /*margin: 4px 2px;*/
     opacity: 0.6;
     transition: 0.3s;
     display: block;

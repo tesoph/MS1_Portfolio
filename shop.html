@@ -66,7 +66,7 @@
             <!--End shop header and banner-->
             <!--Product section-->
             <div class="container-fluid">
-                <div class="row ">
+                <div class="row justify-content-center">
                     <!-- Product card 1 -->
                     <div class="col-12 col-md-6 col-lg-4 shop-col">
                         <div class="product-image">
@@ -89,27 +89,17 @@
                     <!-- Product card 2 -->
                     <div class="col-12 col-md-6 col-lg-4 shop-col">
                         <div class="product-image">
-                            <img src="assets/img/shop/shop01.JPG">
+                            <img id="myImage" src="assets/img/shop/tote.jpg">
                         </div>
                         <div class="product-info">
-                            <h5>T-shirt</h5>
-                            <h6>$20.00</h6>
+                            <h4>Tote bag</h4>
+                            <div class="row size"><h5 onclick="document.getElementById('myImage').src='assets/img/shop/tote.jpg'">White</h5>/<h5 onclick="document.getElementById('myImage').src='assets/img/shop/toteblack.jpg'">Black</h5></div>
+                            <h6>$10.00</h6>
                             <button type="button" class="btn btn-outline-dark">Add to Cart</button>
                         </div>
                     </div>
                     <!-- End product card 2 -->
-                    <!-- Product card 3 -->
-                    <div class="col-12 col-md-6 col-lg-4 shop-col">
-                        <div class="product-image">
-                            <img src="assets/img/shop/shop01.JPG">
-                        </div>
-                        <div class="product-info">
-                            <h5>T-shirt</h5>
-                            <h6>$20.00</h6>
-                            <button type="button" class="btn btn-outline-dark">Add to Cart</button>
-                        </div>
-                    </div>
-                    <!-- End product card 3 -->
+                   
                 </div>
             </div>
             <!-- End product section -->
