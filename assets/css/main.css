@@ -122,7 +122,7 @@ button:focus {
 
 .navbar-toggler {
     margin-top: 2%;
-    background: #bfbfbf !important;
+    background: #dfdfdf; !important;
     color: black !important;
 }
 
@@ -279,8 +279,8 @@ ul.dropdown-menu.show {
     width: auto;
     padding-left: 5%;
     padding-right: 5%;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding-top: 12.5%;
+    padding-bottom: 12.5%;
     /*white-space: nowrap;*/
 }
 
@@ -388,6 +388,9 @@ ul.dropdown-menu.show {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 50% 50%;
+}
+#banner{
+   opacity:0; /* image and alt text provided for screenreaders */
 }
 
 .shop{
