@@ -59,7 +59,7 @@
     <!-- Page content -->
     <section class="section-wrapper">
         <div class="container-fluid shop">
-              <!--Shop header and banner-->
+            <!--Shop header and banner-->
             <h1>Shop</h1>
             <div class="banner">
                 <img id="banner" alt="Banner">
@@ -71,18 +71,17 @@
                     <!-- Product card 1 -->
                     <div class="col-12 col-md-6 col-lg-4 shop-col">
                         <div class="product-image">
-                            <img src="assets/img/shop/shop01.JPG">
+                            <img src="assets/img/shop/shirt.JPG" alt="T-Shirt">
                         </div>
                         <div class="product-info">
                             <h4>T-shirt</h4>
                             <div class="size row">
-                                <h5>XS  </h5>/
-                                <h5>S  </h5>/
-                                <h5>M  </h5>/
-                                <h5>L  </h5>
+                                <h5>XS </h5>/
+                                <h5>S </h5>/
+                                <h5>M </h5>/
+                                <h5>L </h5>
                             </div>
-                          
-                            <h6>$20.00</h6>
+                            <h6>$15.00</h6>
                             <button type="button" class="btn btn-outline-dark">Add to Cart</button>
                         </div>
                     </div>
@@ -90,17 +89,37 @@
                     <!-- Product card 2 -->
                     <div class="col-12 col-md-6 col-lg-4 shop-col">
                         <div class="product-image">
-                            <img id="myImage" src="assets/img/shop/tote.jpg">
+                            <img id="myImage" src="assets/img/shop/tote-white.jpg" alt="Tote bag">
                         </div>
                         <div class="product-info">
                             <h4>Tote bag</h4>
-                            <div class="row size"><h5 onclick="document.getElementById('myImage').src='assets/img/shop/tote.jpg'">White</h5>/<h5 onclick="document.getElementById('myImage').src='assets/img/shop/toteblack.jpg'">Black</h5></div>
+                            <div class="row size">
+                                <h5 onclick="document.getElementById('myImage').src='assets/img/shop/tote-white.jpg'">
+                                    White
+                                </h5>/<h5
+                                    onclick="document.getElementById('myImage').src='assets/img/shop/tote-black.jpg'">
+                                    Black</h5>
+                            </div>
                             <h6>$10.00</h6>
                             <button type="button" class="btn btn-outline-dark">Add to Cart</button>
                         </div>
                     </div>
                     <!-- End product card 2 -->
-               
+                    <!-- Product card 3 -->
+                    <div class="col-12 col-md-6 col-lg-4 shop-col">
+                        <div class="product-image">
+                            <img src="assets/img/shop/print.JPG" alt="Framed print">
+                        </div>
+                        <div class="product-info">
+                            <h4>Print</h4>
+                            <div class="size row">
+                                <h5 class="print">Framed </h5>
+                            </div>
+                            <h6>$20.00</h6>
+                            <button type="button" class="btn btn-outline-dark">Add to Cart</button>
+                        </div>
+                    </div>
+                    <!-- End product card 3 -->
                 </div>
             </div>
             <!-- End product section -->
@@ -112,36 +131,34 @@
     <footer class="footer page-footer">
         <!-- Footer Elements -->
         <div class="container-fluid ">
-
             <!-- Grid row-->
             <div class="row ">
-
                 <!-- Grid column -->
                 <div class="col-8 footercol">
-
-                    <a>
-                        <i class="fa fa-facebook fa-lg mr-md-5 mr-3 fa-2x "> </i>
+                    <a href="http://google.com" target="_blank">
+                        <i class="fab fa-github fa-lg mr-md-5 mr-3 fa-2x"> </i>
+                    </a>
+                    <a href="http://google.com" target="_blank">
+                        <i class="fa fa-facebook fa-lg mr-md-5 mr-3 fa-2x"> </i>
                     </a>
                     <!-- Twitter -->
-                    <a>
-                        <i class="fa fa-twitter fa-lg mr-md-5 mr-3 fa-2x "> </i>
+                    <a href="http://google.com" target="_blank">
+                        <i class="fa fa-twitter fa-lg mr-md-5 mr-3 fa-2x"> </i>
                     </a>
-
                     <!--Linkedin -->
                     <!---
-                    fab icon not showing up: related to font weight? fab needs 400 fa needs 900
-                    <a>
-                        <i class="fab fa-linkedin fa-lg mr-md-5 mr-3 fa-2x " style="font-weight:400; "></i>
-                    </a>-->
+                        fab icon not showing up: related to font weight? fab needs 400 fa needs 900
+                        <a>
+                            <i class="fab fa-linkedin fa-lg mr-md-5 mr-3 fa-2x " style="font-weight:400; "></i>
+                        </a>-->
                     <!--Instagram-->
-                    <a>
-                        <i class="fa fa-instagram fa-lg mr-md-5 mr-3 fa-2x "> </i>
+                    <a href="http://google.com" target="_blank">
+                        <i class="fa fa-instagram fa-lg mr-md-5 mr-3 fa-2x"> </i>
                     </a>
                     <!--Pinterest-->
-                    <a>
-                        <i class="fa fa-pinterest fa-lg fa-2x "> </i>
+                    <a href="http://google.com" target="_blank">
+                        <i class="fa fa-pinterest fa-lg fa-2x"> </i>
                     </a>
-
                 </div>
                 <!-- Grid column -->
                 <div class="col-4 text-right ">
@@ -149,16 +166,12 @@
                 </div>
             </div>
             <!-- Grid row-->
-
-        </div>
-
-    </div>
-
         </div>
     </footer>
     <!--End footer-->
-<script>
-</script>
+
+    <script>
+    </script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>

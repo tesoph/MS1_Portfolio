@@ -27,7 +27,6 @@
 
 @import url('https://fonts.googleapis.com/css?family=Inconsolata|Lato');
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
-
 /*----------Colors---------*/
 
 :root {
@@ -52,9 +51,6 @@ html, body {
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
-}
-
-body {
     background-color: white;
     color: var(--main-txt-color);
     font-family: 'Inconsolata', monospace;
@@ -73,7 +69,8 @@ body {
 }
 
 .container-fluid {
-    padding: 0px;
+    padding-left: 1%;
+    padding-right: 1%;
 }
 
 @media (min-width: 576px) {
@@ -127,7 +124,7 @@ h2 {
 
 /*----------Buttons---------*/
 
- .btn {
+.btn {
     color: black;
     background-color: #f2f2f2;
     border: 3px solid black;
@@ -297,7 +294,8 @@ button:focus {
     -webkit-transform: scale(1.04);
     transform: scale(1.04);
     -webkit-filter: blur(1.5px);
-    filter: blur(1.5px);   /*Blur effect on a:hover taken from https://themeforest.net/item/mono-creative-multipurpose-template/21490319*/
+    filter: blur(1.5px);
+    /*Blur effect on a:hover taken from https://themeforest.net/item/mono-creative-multipurpose-template/21490319*/
 }
 
 @media (min-width: 576px) {
@@ -315,7 +313,8 @@ button:focus {
         display: none;
     }
     #scrolling-wrapper .col-4 {
-        display: none; /*Display set to none so that col-4 will not interfere with centering the images within the row on larger viewports*/
+        display: none;
+        /*Col-4 only needed on mobile devices to indicate the end of hoirzontal scrolling gallery. Display set to none so that col-4 will not interfere with centering the images within the row on viewports* larger than 576px*/
     }
 }
 
@@ -351,7 +350,8 @@ button:focus {
 
 @media (min-width: 2560px) {
     .gallery-col {
-        max-width: 400px; /*max-width to prevent images not filling columns on 4k viewports */
+        max-width: 400px;
+        /*max-width to prevent images not filling columns on 4k viewports */
         max-height: 400px;
     }
     .gallery-col img {
@@ -369,7 +369,8 @@ button:focus {
 /*----------SHOP--------*/
 
 .banner {
-    background: black; /*black background to account for image within banner div resizing at different viewports*/
+    background: black;
+    /*black background to account for image within banner div resizing at different viewports*/
     height: 300px;
     background-image: url("../img/shop/banner-mobile.png");
     background-size: contain;
@@ -378,7 +379,8 @@ button:focus {
 }
 
 #banner {
-    opacity: 0; /*  <img id="banner" alt="Banner"> provided in the banner div for screenreaders */
+    opacity: 0;
+    /*  <img id="banner" alt="Banner"> provided in the banner div for screenreaders only */
 }
 
 .shop {
@@ -393,17 +395,11 @@ button:focus {
     overflow-y: visible;
 }
 
-/*
-.product-image {
-    width: 100%;
-    margin: auto;
-}*/
-
 .shop-col img {
     display: block;
     margin: auto;
-    max-width: 100%;
-    height: 440px;
+    max-height:100%;
+    max-width:85%;
     transition: all .4s ease-in-out;
     -moz-transition: all .4s ease-in-out;
     -webkit-transition: all .4s ease-in-out;
@@ -424,7 +420,10 @@ button:focus {
     color: black;
     background-color: #E5E5E5;
 }
-
+.product-info .print {
+    width:100%;
+    text-align:center;
+}
 .product-info .size {
     display: flex;
     justify-content: space-between;
@@ -491,7 +490,7 @@ input[type="file"] {
 }
 
 .custom-file-upload {
-    /* https://stackoverflow.com/questions/572768/styling-an-input-type-file-button */
+    /* HTML and CSS only file upload button from https://stackoverflow.com/questions/572768/styling-an-input-type-file-button */
     background-color: white;
     border: solid;
     color: black;
@@ -525,8 +524,10 @@ label {
 }
 
 /*----------DEBUGGING---------*/
+
 /*
 CSS Debugging from https://blog.wernull.com/2013/04/debug-ghost-css-elements-causing-unwanted-scrolling/*/
+
 /*
 * {
     background: #000 !important;
