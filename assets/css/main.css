@@ -1,8 +1,34 @@
-/*-------------------------------------------- FONTS */
+/*
+ * CONTENTS
+ * (Media queries at the end of each relevant section)
+ *
+ * COMPONENTS
+ * Fonts
+ * Colors
+ * Html, Body
+ * Headings
+ * Wrappers
+ * Buttons
+ * Navbar
+ * Footer
+ *
+ * INDEX
+ *
+ * ABOUT
+ *
+ * SHOP
+ *
+ * CONTACT
+ *
+ * Debugging
+ */
+
+/*----------Fonts---------*/
 
 @import url('https://fonts.googleapis.com/css?family=Inconsolata|Lato');
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
-/*-------------------------------------------- COLORS */
+
+/*----------Colors---------*/
 
 :root {
     --main-bg-color: #dfdfdf;
@@ -18,7 +44,7 @@ DARK THEME
 */
 }
 
-/*-------------------------------------------- HTML, BODY */
+/*----------Html, Body---------*/
 
 html, body {
     width: 100%;
@@ -34,6 +60,8 @@ body {
     font-family: 'Inconsolata', monospace;
 }
 
+/*----------Wrappers--------*/
+
 .section-wrapper {
     /*margin-bottom:50px; To leave space for footer{height:50px;}*/
     background-color: var(--main-bg-color);
@@ -47,6 +75,24 @@ body {
 .container-fluid {
     padding: 0px;
 }
+
+@media (min-width: 576px) {
+    .section-wrapper {
+        padding-left: 9%;
+        padding-right: 9%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+}
+
+@media (min-width: 2560px) {
+    .section-wrapper {
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+}
+
+/*----------Headings---------*/
 
 h1 {
     text-align: center;
@@ -70,18 +116,7 @@ h2 {
     color: #4C4C4C;
 }
 
-button:hover {
-    box-shadow: 0px 0px 10px black;
-    opacity: 1;
-}
-
 @media (min-width: 576px) {
-    .section-wrapper {
-        padding-left: 9%;
-        padding-right: 9%;
-        padding-top: 3%;
-        padding-bottom: 3%;
-    }
     h1 {
         background-color: white;
     }
@@ -90,14 +125,20 @@ button:hover {
     }
 }
 
-@media (min-width: 2560px) {
-    .section-wrapper {
-        padding-top: 2%;
-        padding-bottom: 2%;
-    }
+/*----------Buttons---------*/
+
+ .btn {
+    color: black;
+    background-color: #f2f2f2;
+    border: 3px solid black;
 }
 
-/*-------------------------------------------- NAVIGATION BAR */
+button:hover {
+    box-shadow: 0px 0px 10px black;
+    opacity: 1;
+}
+
+/*----------NAVBAR---------*/
 
 .navbar {
     background: none;
@@ -122,8 +163,8 @@ button:focus {
 
 .navbar-toggler {
     margin-top: 2%;
-    background: #dfdfdf; !important;
-    color: black !important;
+    background: #dfdfdf;
+    color: black;
 }
 
 .nav {
@@ -150,47 +191,6 @@ button:focus {
     padding-left: 0px;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-}
-
-.dropdown-item {
-    /* background-color: var(--main-bg-color);*/
-    color: var(--main-txt-color);
-}
-
-.dropdown-menu {
-    /*-webkit-transition: all 0.4s ease-in-out;
-    -moz-transition: all 0.4s ease-in-out;
-    -ms-transition: all 0.4s ease-in-out;
-    -o-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out;
-    max-height: 0;
-    display: block;
-    overflow: hidden;
-    opacity: 0;*/
-    /*https://stackoverflow.com/questions/12115833/adding-a-slide-effect-to-bootstrap-dropdown*/
-}
-
-/*
-.dropdown-menu ul{
-    opacity: 0;
-}*/
-
-ul.dropdown-menu.show {
-    max-height: 300px;
-    /*opacity: 1;*/
-    padding: 0px;
-    margin: 0px;
-    background-color: white;
-}
-
-.dropdown-menu .dropdown-item .nav-link:hover {
-    letter-spacing: 2px;
-    font-weight: 700;
-    color: black;
-}
-
-.dropdown-menu .dropdown-item:active {
-    background-color: grey;
 }
 
 .navbar-collapse.collapse {
@@ -221,7 +221,7 @@ ul.dropdown-menu.show {
     }
 }
 
-/*-------------------------------------------- FOOTER */
+/*----------FOOTER---------*/
 
 .footer i.fa, i.fab {
     color: #8E8D8A;
@@ -240,27 +240,12 @@ ul.dropdown-menu.show {
     padding: 3%;
 }
 
-/*
-.footer ul li {
-    display: inline-block;
-}*/
-
-/*
-.footer a {
-    color: black;
-}*/
-
 .footercol {
     display: flex;
     align-items: center;
     font-size: 14px;
     /*To adjust icon size*/
 }
-
-/*
-.text-right {
-    font-size: 0.7rem;
-}*/
 
 @media (min-width: 768px) {
     .footer {
@@ -269,7 +254,7 @@ ul.dropdown-menu.show {
     }
 }
 
-/*-------------------------------------------- INDEX.HTML GALLERY */
+/*----------INDEX.HTML---------*/
 
 #scrolling-wrapper {
     display: flex;
@@ -300,21 +285,19 @@ ul.dropdown-menu.show {
     max-width: 160%;
     max-height: 160%;
     display: block;
-   
 }
 
-.gallery-col a{
+.gallery-col a {
     transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     -webkit-transition: all .2s ease-in-out;
 }
 
 .gallery-col a:hover {
-    /*Blur effect on a:hover from themeforest mono*/
     -webkit-transform: scale(1.04);
     transform: scale(1.04);
     -webkit-filter: blur(1.5px);
-    filter: blur(1.5px);
+    filter: blur(1.5px);   /*Blur effect on a:hover taken from https://themeforest.net/item/mono-creative-multipurpose-template/21490319*/
 }
 
 @media (min-width: 576px) {
@@ -332,8 +315,7 @@ ul.dropdown-menu.show {
         display: none;
     }
     #scrolling-wrapper .col-4 {
-        display: none;
-        /*Display set to none so that col-4 will not interfere with centering the images within the row onlarger viewports*/
+        display: none; /*Display set to none so that col-4 will not interfere with centering the images within the row on larger viewports*/
     }
 }
 
@@ -369,8 +351,7 @@ ul.dropdown-menu.show {
 
 @media (min-width: 2560px) {
     .gallery-col {
-        /*max-width to prevent images not filling columns on 4k viewports */
-        max-width: 400px;
+        max-width: 400px; /*max-width to prevent images not filling columns on 4k viewports */
         max-height: 400px;
     }
     .gallery-col img {
@@ -379,27 +360,33 @@ ul.dropdown-menu.show {
     }
 }
 
-/*-------------------------------------------- SHOP.HTML */
+/*----------ABOUT---------*/
+
+.about-paragraph {
+    padding: 20px;
+}
+
+/*----------SHOP--------*/
 
 .banner {
-    background: black;
-    /*black background to account for image within banner div resizing at different viewports*/
+    background: black; /*black background to account for image within banner div resizing at different viewports*/
     height: 300px;
     background-image: url("../img/shop/banner-mobile.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }
-#banner{
-   opacity:0; /* image and alt text provided for screenreaders */
+
+#banner {
+    opacity: 0; /*  <img id="banner" alt="Banner"> provided in the banner div for screenreaders */
 }
 
-.shop{
-    background-color:white;
+.shop {
+    background-color: white;
 }
 
 .shop-col {
-    justify-content:center;
+    justify-content: center;
     padding-top: 5%;
     padding-bottom: 5%;
     overflow-x: visible;
@@ -407,52 +394,16 @@ ul.dropdown-menu.show {
 }
 
 /*
-.shop-col-test{
-    padding-top: 5%;
-    padding-bottom: 5%;
-    overflow-x: visible;
-    overflow-y: visible;
-    position:relative;
-    height:717px;
-    width:450px;
-    margin:0 auto;
-  }
- #a img {
-    max-width: 100%;
-    height:450px;
-    position:absolute;
-    left:0;
-    -webkit-transition: opacity 1s ease-in-out;
-    -moz-transition: opacity 1s ease-in-out;
-    -o-transition: opacity 1s ease-in-out;
-    transition: opacity 1s ease-in-out;
-  }
-  
-  #a img.transparent {
-  opacity:0;
-  }
-  #white,#black{
-  cursor:pointer;
-  }
-  .product-info-test {
-      position:absolute;
-      bottom:0;
-    height:140px;
-    text-align: center;
-    margin-top: 10px;
-}
-*/
-
-.product-image{
-    width:100%;
-    margin:auto;
-}
+.product-image {
+    width: 100%;
+    margin: auto;
+}*/
 
 .shop-col img {
-    display:block;
-    margin:auto;
+    display: block;
+    margin: auto;
     max-width: 100%;
-height:440px;
+    height: 440px;
     transition: all .4s ease-in-out;
     -moz-transition: all .4s ease-in-out;
     -webkit-transition: all .4s ease-in-out;
@@ -461,24 +412,17 @@ height:440px;
 .shop-col img:hover {
     -webkit-transform: scale(1.05);
     transform: scale(1.05);
-  
 }
 
 .product-info {
-    height:140px;
+    height: 140px;
     text-align: center;
     margin-top: 10px;
 }
 
 .product-info h4 {
     color: black;
-    background-color: 	#E5E5E5;
-}
-
-.product-info .btn {
-    color:black;
-    background-color: #f2f2f2;
-    border: 3px solid black;
+    background-color: #E5E5E5;
 }
 
 .product-info .size {
@@ -488,12 +432,9 @@ height:440px;
     width: 150px;
 }
 
-
-
-.product-info .size h5:hover{
+.product-info .size h5:hover {
     color: red;
     font-weight: bold;
-    
 }
 
 @media (min-width: 576px) {
@@ -502,55 +443,34 @@ height:440px;
     }
 }
 
-@media (min-width: 768px) {}
-
-@media (min-width:1440px){
-
-.product-info h4 {
-    margin:auto;
-    vertical-align:middle;
-   width:55%;
+@media (min-width:1440px) {
+    .product-info h4 {
+        margin: auto;
+        vertical-align: middle;
+        width: 55%;
+    }
 }
-}
+
 @media (min-width: 2560px) {
-
-.product-info h4 {
-   width:40%;
-}
+    .product-info h4 {
+        width: 40%;
+    }
     .banner {
         min-height: 400px;
         background-image: url("../img/shop/banner-xlarge.png");
     }
 }
 
-/*-------------------------------------------- CONTACT.HTML */
+/*----------CONTACT--------*/
 
 .contact-info {
     text-align: center;
     margin-top: 2rem;
 }
 
-.col i {
-    display: inline-block;
-    width: 100%;
-    text-align: center;
-}
-
-hr {
-    border-width: 2.5px;
-}
-
 .center-form {
     margin-top: 25px;
     padding-bottom: 25px;
-}
-
-input[type="file"] {
-    display: none;
-}
-
-.contact-heading {
-    margin-bottom: 3%;
 }
 
 .contact {
@@ -566,7 +486,12 @@ input[type="file"] {
     transition: ease-out .2s;
 }
 
+input[type="file"] {
+    display: none;
+}
+
 .custom-file-upload {
+    /* https://stackoverflow.com/questions/572768/styling-an-input-type-file-button */
     background-color: white;
     border: solid;
     color: black;
@@ -599,53 +524,10 @@ label {
     }
 }
 
-/*ABOUT.HTML*/
-
-.about-paragraph {
-    padding: 20px;
-}
-
-/*-------------------------------------------- LANDING.HTML*/
-
-.landing-container {
-    background-image: url("../img/backgrounds/background-02.png");
-    background-color: black;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100vh;
-    background-size: cover;
-    font-size: 25px;
-}
-
-.landing-logo {
-    border-radius: 50%;
-}
-
-.logo-container {
-    display: -webkit-flexbox;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-}
-
-.landing-container .nav-link {
-    color: white;
-}
-
-.landing-container .dropdown-item {
-    background: black;
-}
-
+/*----------DEBUGGING---------*/
 /*
-CSS Debugging from https://blog.wernull.com/2013/04/debug-ghost-css-elements-causing-unwanted-scrolling/
-
+CSS Debugging from https://blog.wernull.com/2013/04/debug-ghost-css-elements-causing-unwanted-scrolling/*/
+/*
 * {
     background: #000 !important;
     color: #0f0 !important;
