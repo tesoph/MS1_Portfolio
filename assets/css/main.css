@@ -26,6 +26,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Inconsolata|Lato');
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
 /*----------Html, Body---------*/
 
 html, body {
@@ -52,7 +53,7 @@ html, body {
 }
 
 .container-fluid {
-    padding: 0px;
+   padding:0px;
 }
 
 @media (min-width: 576px) {
@@ -202,7 +203,6 @@ button:focus {
 }
 
 /*----------FOOTER---------*/
-
 .footer i.fa, i.fab {
     color: #8E8D8A;
 }
@@ -239,7 +239,6 @@ button:focus {
         font-size: 2rem;
     }
 }
-
 /*----------INDEX.HTML---------*/
 
 #scrolling-wrapper {
