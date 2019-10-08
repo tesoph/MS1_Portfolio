@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="./libraries/fontawesome/all.min.css" type="text/css" />
     <link rel="stylesheet" href="./libraries/fontawesome/v4-shims.min.css" type="text/css" />
     <!--Fancybox CSS-->
-    <link rel="stylesheet" href="./libraries/jquery.fancybox.min.css" type="text/css"/>
+    <link rel="stylesheet" href="./libraries/jquery.fancybox.min.css" type="text/css" />
 
     <!-- Custom CSS -->
     <link href="assets/css/main.css" rel="stylesheet" type="text/css">
@@ -26,38 +26,38 @@
 <body>
     <!-- Header -->
     <header>
-            <!-- Navigation -->
-            <nav class="navbar navbar-light navbar-expand-md">
-                <div><a href="index.html"><img class="img-fluid logo" src="assets/img/logo/logo2.png" alt="logo"></a>
+        <!-- Navigation -->
+        <nav class="navbar navbar-light navbar-expand-md">
+            <div><a href="index.html"><img class="img-fluid logo" src="assets/img/logo/logo2.png" alt="logo"></a>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
+                aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div>
+                <div class="collapse navbar-collapse" id="navbarToggler">
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="shop.html">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
                 </div>
-    
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
-                    aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-    
-                <div>
-                    <div class="collapse navbar-collapse" id="navbarToggler">
-                        <ul class="nav justify-content-center">
-                            <li class="nav-item">
-                                <a class="nav-link active" href="index.html">Gallery</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="about.html">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="shop.html">Shop</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contact.html">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-            <!-- End navigation -->
-        </header>
-        <!-- End header -->
+            </div>
+        </nav>
+        <!-- End navigation -->
+    </header>
+    <!-- End header -->
 
     <!-- Portfolio section -->
     <section class="section-wrapper">
@@ -68,7 +68,8 @@
             </div>
             <div class="col-11 col-sm-6 col-md-4 col-lg-3 gallery-col">
                 <a data-fancybox="gallery" href="assets/img/gallery/img2-large.jpg"><img
-                        src="assets/img/gallery/thumbnails/img2-thumbnail.jpg" alt="Portrait drawn in pencil of the artist Kate Bush"></a>
+                        src="assets/img/gallery/thumbnails/img2-thumbnail.jpg"
+                        alt="Portrait drawn in pencil of the artist Kate Bush"></a>
             </div>
             <div class="col-11 col-sm-6 col-md-4 col-lg-3 gallery-col">
                 <a data-fancybox="gallery" href="assets/img/gallery/img3-large.jpg"><img
@@ -83,13 +84,16 @@
                         src="assets/img/gallery/thumbnails/img5-thumbnail.jpg" alt="Self-portrait drawn in pencil"></a>
             </div>
             <div class="col-11 col-sm-6 col-md-4 col-lg-3 gallery-col">
-                <a data-fancybox="gallery" href="assets/img/gallery/maze01.png"><img src="assets/img/gallery/maze01.png" alt="Generative drawing of a maze"></a>
+                <a data-fancybox="gallery" href="assets/img/gallery/maze01.png"><img src="assets/img/gallery/maze01.png"
+                        alt="Generative drawing of a maze"></a>
             </div>
             <div class="col-11 col-sm-6 col-md-4 col-lg-3 gallery-col">
-                <a data-fancybox="gallery" href="assets/img/gallery/rose01.png"><img src="assets/img/gallery/rose01.png" alt="Generative drawing of a rose curve"></a>
+                <a data-fancybox="gallery" href="assets/img/gallery/rose01.png"><img src="assets/img/gallery/rose01.png"
+                        alt="Generative drawing of a rose curve"></a>
             </div>
             <div class="col-11 col-sm-6 col-md-4 col-lg-3 gallery-col">
-                <a data-fancybox="gallery" href="assets/img/gallery/audio01.png"><img src="assets/img/gallery/audio01.png" alt="A still image from a music visualisation"></a>
+                <a data-fancybox="gallery" href="assets/img/gallery/audio01.png"><img
+                        src="assets/img/gallery/audio01.png" alt="A still image from a music visualisation"></a>
             </div>
 
             <div class="col-4">
@@ -101,12 +105,11 @@
 
     <!-- Footer -->
     <footer class="footer page-footer">
-        <!-- Footer Elements -->
         <div class="container-fluid ">
-            <!-- Grid row-->
             <div class="row ">
                 <!-- Grid column -->
                 <div class="col-8 footercol">
+                    <!-- Github -->
                     <a href="http://google.com" target="_blank">
                         <i class="fab fa-github fa-lg mr-md-5 mr-3 fa-2x"> </i>
                     </a>
@@ -117,12 +120,6 @@
                     <a href="http://google.com" target="_blank">
                         <i class="fa fa-twitter fa-lg mr-md-5 mr-3 fa-2x"> </i>
                     </a>
-                    <!--Linkedin -->
-                    <!---
-                        fab icon not showing up: related to font weight? fab needs 400 fa needs 900
-                        <a>
-                            <i class="fab fa-linkedin fa-lg mr-md-5 mr-3 fa-2x " style="font-weight:400; "></i>
-                        </a>-->
                     <!--Instagram-->
                     <a href="http://google.com" target="_blank">
                         <i class="fa fa-instagram fa-lg mr-md-5 mr-3 fa-2x"> </i>
@@ -137,7 +134,6 @@
                     © 2019 Copyright Ray
                 </div>
             </div>
-            <!-- Grid row-->
         </div>
     </footer>
     <!--End footer-->
