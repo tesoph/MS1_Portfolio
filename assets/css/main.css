@@ -4,7 +4,6 @@
  *
  * COMPONENTS
  * Fonts
- * Colors
  * Html, Body
  * Headings
  * Wrappers
@@ -27,21 +26,6 @@
 
 @import url('https://fonts.googleapis.com/css?family=Inconsolata|Lato');
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
-/*----------Colors---------*/
-
-:root {
-    --main-bg-color: #dfdfdf;
-    --main-txt-color: #314455;
-    --main-nav-txt-color: #314455;
-    --main-footer-txt-color: #8E8D8A;
-    /*
-DARK THEME
-    --main-bg-color: #373737;
-    --main-txt-color: white;
-    --main-nav-txt-color: white;
-    --main-footer-txt-color: white;
-*/
-}
 
 /*----------Html, Body---------*/
 
@@ -52,7 +36,7 @@ html, body {
     padding: 0px;
     overflow-x: hidden;
     background-color: white;
-    color: var(--main-txt-color);
+    color: #314455;
     font-family: 'Inconsolata', monospace;
 }
 
@@ -60,7 +44,7 @@ html, body {
 
 .section-wrapper {
     /*margin-bottom:50px; To leave space for footer{height:50px;}*/
-    background-color: var(--main-bg-color);
+    background-color: #dfdfdf;
     padding: 0%;
 }
 
@@ -69,8 +53,7 @@ html, body {
 }
 
 .container-fluid {
-    padding-left: 1%;
-    padding-right: 1%;
+   padding:0px;
 }
 
 @media (min-width: 576px) {
@@ -160,8 +143,9 @@ button:focus {
 
 .navbar-toggler {
     margin-top: 2%;
-    background: #dfdfdf;
+    background: white;
     color: black;
+    outline: 5px auto grey;
 }
 
 .nav {
@@ -169,7 +153,7 @@ button:focus {
 }
 
 .nav .nav-item a {
-    color: var(--main-nav-text-color);
+    color: #314455;
     font-size: 1.12em;
     padding-left: 10px;
     padding-right: 10px;
@@ -231,7 +215,7 @@ button:focus {
 .footer {
     /* height: 50px;*/
     background-color: white;
-    color: var(--main-footer-txt-color);
+    color: #8E8D8A;
     /* padding-top: 3%;
     padding-bottom: 3%;*/
     padding: 3%;
@@ -398,8 +382,8 @@ button:focus {
 .shop-col img {
     display: block;
     margin: auto;
-    max-height:100%;
-    max-width:85%;
+    max-height: 100%;
+    max-width: 85%;
     transition: all .4s ease-in-out;
     -moz-transition: all .4s ease-in-out;
     -webkit-transition: all .4s ease-in-out;
@@ -420,20 +404,27 @@ button:focus {
     color: black;
     background-color: #E5E5E5;
 }
+
 .product-info .print {
-    width:100%;
-    text-align:center;
+    width: 100%;
+    text-align: center;
 }
+
 .product-info .size {
     display: flex;
     justify-content: space-between;
     margin: auto;
     width: 150px;
+    margin-top: 10px;
 }
 
 .product-info .size h5:hover {
     color: red;
     font-weight: bold;
+}
+
+.product-info h6 {
+    margin-bottom: 10px;
 }
 
 @media (min-width: 576px) {
@@ -512,7 +503,7 @@ label {
 }
 
 .custom-file-upload:hover {
-    box-shadow: 0px 0px 10px #4bc6ff;
+    box-shadow: 0px 0px 10px grey;
     opacity: 1;
 }
 
