@@ -280,9 +280,10 @@ button:focus {
         flex-wrap: wrap;
     overflow-x: hidden;
     overflow-y: hidden;
-    max-height: 450px;
     overflow-x: hidden;
     vertical-align: middle;
+    max-width:300px;
+    max-height:450px;
 }
 
 .gallery-col img {
@@ -316,10 +317,12 @@ button:focus {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
         padding: 0px;
+        justify-content: center !important;
     }
     .gallery-col {
-        max-height: 275px;
-        margin-bottom: 15px;
+        max-height: 240px;
+        max-width:240px;
+       /* margin-bottom: 15px;*/
     }
     .mobile-spacing {
         display: none;
@@ -333,42 +336,34 @@ button:focus {
 @media (min-width: 768px) {
     .gallery-col {
         max-height: 225px;
+        max-width:225px;
     }
     .gallery-col img {
-        max-width: 180%;
-        max-height: 180%;
+        max-width: 120%;
+        max-height: 120%;
     }
 }
 
 @media (min-width: 992px) {
     .gallery-col {
         max-height: 275px;
+        max-width:275px;
     }
-    .gallery-col img {
-        max-width: 190%;
-        max-height: 190%;
-    }
+ 
 }
 
 @media (min-width: 1440px) {
     .gallery-col {
-        max-height: 275px;
-    }
-    .gallery-col img {
-        max-width: 170%;
-        max-height: 170%;
+        max-height: 300px;
+        max-width:300px;
     }
 }
 
-@media (min-width: 2560px) {
+@media (min-width: 2000px) {
     .gallery-col {
         max-width: 400px;
         /*max-width to prevent images not filling columns on 4k viewports */
         max-height: 400px;
-    }
-    .gallery-col img {
-        max-width: 140%;
-        max-height: 140%;
     }
 }
 
