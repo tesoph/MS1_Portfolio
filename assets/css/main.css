@@ -114,7 +114,8 @@ h2 {
 }
 
 button:hover {
-    box-shadow: 0px 0px 10px black;
+    -webkit-box-shadow: 0px 0px 10px black;
+            box-shadow: 0px 0px 10px black;
     opacity: 1;
 }
 
@@ -125,7 +126,10 @@ button:hover {
     border-color: transparent;
     letter-spacing: 2px;
     text-transform: uppercase;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     background-color: white;
     padding-bottom: 5%;
     padding-top: 5%;
@@ -157,6 +161,7 @@ button:focus {
     font-size: 1.12em;
     padding-left: 10px;
     padding-right: 10px;
+    -o-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     -webkit-transition: all .2s ease-in-out;
@@ -217,12 +222,16 @@ button:focus {
     color: #8E8D8A;
     /* padding-top: 3%;
     padding-bottom: 3%;*/
-    padding: 3%;
+    padding: 5%;
 }
 
 .footercol {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .fa, .fab {
@@ -242,8 +251,11 @@ button:focus {
 /*----------INDEX.HTML---------*/
 
 #scrolling-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     width: auto;
@@ -255,10 +267,17 @@ button:focus {
 }
 
 .gallery-col {
-    flex: 0 0 auto;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     overflow-x: hidden;
     overflow-y: hidden;
     max-height: 450px;
@@ -273,6 +292,7 @@ button:focus {
 }
 
 .gallery-col a {
+    -o-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     -webkit-transition: all .2s ease-in-out;
@@ -280,7 +300,8 @@ button:focus {
 
 .gallery-col a:hover {
     -webkit-transform: scale(1.04);
-    transform: scale(1.04);
+    -ms-transform: scale(1.04);
+        transform: scale(1.04);
     -webkit-filter: blur(1.5px);
     filter: blur(1.5px);
     /*Blur effect on a:hover taken from https://themeforest.net/item/mono-creative-multipurpose-template/21490319*/
@@ -288,9 +309,12 @@ button:focus {
 
 @media (min-width: 576px) {
     #scrolling-wrapper {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         overflow-x: initial;
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
         padding: 0px;
     }
     .gallery-col {
@@ -376,7 +400,9 @@ button:focus {
 }
 
 .shop-col {
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding-top: 5%;
     padding-bottom: 5%;
     overflow-x: visible;
@@ -388,6 +414,7 @@ button:focus {
     margin: auto;
     max-height: 100%;
     max-width: 85%;
+    -o-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
     -moz-transition: all .4s ease-in-out;
     -webkit-transition: all .4s ease-in-out;
@@ -395,7 +422,8 @@ button:focus {
 
 .shop-col img:hover {
     -webkit-transform: scale(1.05);
-    transform: scale(1.05);
+    -ms-transform: scale(1.05);
+        transform: scale(1.05);
 }
 
 .product-info {
@@ -415,8 +443,12 @@ button:focus {
 }
 
 .product-info .size {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin: auto;
     width: 150px;
     margin-top: 10px;
@@ -474,9 +506,11 @@ button:focus {
     border: 1px solid rgba(0, 0, 0, .1);
     margin-bottom: 1rem;
     padding: 15px 20px;
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
     font: 300 16px "Inconsolata", sans-serif;
     -webkit-transition: ease-out .2s;
+    -o-transition: ease-out .2s;
     transition: ease-out .2s;
 }
 
@@ -494,12 +528,18 @@ input[type="file"] {
     text-align: center;
     font-size: 16px;
     opacity: 0.6;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
     display: block;
     text-decoration: none;
     cursor: pointer;
     border-radius: .25rem;
+    -webkit-transition: border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+    -o-transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
 }
 
 label {
@@ -507,7 +547,8 @@ label {
 }
 
 .custom-file-upload:hover {
-    box-shadow: 0px 0px 10px grey;
+    -webkit-box-shadow: 0px 0px 10px grey;
+            box-shadow: 0px 0px 10px grey;
     opacity: 1;
 }
 
