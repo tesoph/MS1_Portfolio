@@ -3,12 +3,22 @@
 
 This is my portfolio website designed to create an online presence as an artist. The main feature of the portfolio is a gallery of my artwork displayed on index.html. The website also features an about page, a shop of merchandise, and a contact page with a form.
 
-
+## Table of contents
+* [Demo](#Demo)
+* [UX](#UX)
+* [Features](#Features)
+* [Technologies Used](#technologies-used)
+* [Testing](#testing)
+* [Deployment](#deployment)
+* [Credits](#credits)
+  
 ## Demo
 A live demo can be found [here](https://tesoph.github.io/MS1_Portfolio/).
 
 
 ## UX
+
+### User Stories
 
 The following user stories were used to focus on the features the website should have:
 
@@ -36,25 +46,30 @@ The following user stories were used to focus on the features the website should
 ### Existing Features
 * Header (every page)
   * The header on every page features a navigation bar to navigate through the website.
-  * The navigation bar is collapsed on mobile devices to contribute to a minimal look.
+  * The navigation bar is responsive and is collapsed to a navbar toggler on mobile devices to contribute to a minimal look.
   * The header features a logo which is an anchor link to the home page.
+  * The logo is unconventially placed in the navigation bar (above the navigation links) in order to create a  memorable and eye-catching design.
 
 * Footer (every page)
   * Social media icons
   * Copyright info 
 
 * [Gallery page](https://tesoph.github.io/MS1_Portfolio/index.html)
-  * A gallery of thumbnail images which can individually be clicked to view a full-screen-sized image. On mobile devices this gallery is horizontally scrolling. This design was chosen as side-scrolling is intuitive to mobile users. At the end of the gallery there is blank space left to visually indicate the end of the gallery. On viewports wider than 576px the gallery displays as a grid of images. 
+  * A gallery of thumbnail images which can individually be clicked to view a large version of the image in a fancybox window. 
+  * On mobile devices this gallery is horizontally scrolling. This design was chosen as side-scrolling is intuitive to mobile users. At the end of the gallery there is blank space left to visually indicate the end of the gallery. 
+  * On viewports wider than 576px the gallery displays as a grid of images. 
 
 * [About page](https://tesoph.github.io/MS1_Portfolio/about.html)
-  *  Presents information about the artist's work and background
+  *  Presents information about the artist's work and background.
 
 * [Shop page](https://tesoph.github.io/MS1_Portfolio/shop.html)
+  * Banner to advertise a sale.
   * Features products for sale with images and product information. 
 
 * [Contact page](https://tesoph.github.io/MS1_Portfolio/contact.html)
-  * Features a contact form
-  * Features contact information
+  * Contact Information
+  * Contact Form
+  
 
 ### Features Left to Implement
 * Gallery filtering 
@@ -66,7 +81,7 @@ The following user stories were used to focus on the features the website should
 * HTML
 * CSS
 * Javascript
-  * Used to change the image src in shop.html
+  * Used to change the product image src on the shop page.
 * Bootstrap (v4.3.1)
 * [Fancybox (v3.5.7)](http://fancybox.net/)
 * [Google fonts](https://fonts.google.com/)
@@ -98,7 +113,7 @@ The logo in the navbar is an anchor link which directs to index.html
 All icons in the footer when clicked will open in a new tab using 'target="_blank"' and href="`https://www.google.com`". All links have been manually tested to ensure that they are pointing to the correct destination.
 
 ### Body
-During the testing phase I noticed that there was white space showing up on right-hand side of the browser. This was fixed following [this stackoverflow response](https://stackoverflow.com/questions/4617872/white-space-showing-up-on-right-side-of-page-when-background-image-should-extend/4617920) to insert the following code:
+During the testing phase I noticed that there was white space showing up on right-hand side of the browser. This was fixed following [this stackoverflow response](https://stackoverflow.com/questions/4617872/white-space-showing-up-on-right-side-of-page-when-background-image-should-extend/4617920) to insert the following code in the CSS file:
 ```css
 html,body
 {
@@ -126,14 +141,14 @@ All images on the site are my own with the following exceptions:
 2. The mockup image for the t-shirt in the shop is taken from [Freepik](https://www.freepik.com/free-psd/simple-black-men-s-tee-mockup_3384897.htm#page=1&query=t%20shirt%20mockup&position=0)
 
 ### Acknowledgements 
-The horizontal scrolling gallery was created following this tutorial [here](https://codeburst.io/how-to-create-horizontal-scrolling-containers-d8069651e9c6).
+The horizontal scrolling gallery was created following the article [How To Create Horizontal Scrolling Containers](https://codeburst.io/how-to-create-horizontal-scrolling-containers-d8069651e9c6).
 
-The shop page was created following this tutorial [here](https://css-tricks.com/designing-a-product-page-layout-with-flexbox/).
+The shop page was created following the article [Designing A Product Page Layout with Flexbox](https://css-tricks.com/designing-a-product-page-layout-with-flexbox/).
 
-The blur effect on hovering over an image was modelled after the following theme [here](http://mono.flatheme.net/Home/Portfolio-Minimal.html).
+The blur effect on hovering over an image was modelled after the [Mono theme from Themeforest](http://mono.flatheme.net/Home/Portfolio-Minimal.html).
 
 The form on the contact page was modelled after the Code Institute lesson "Putting It All Together | Mini Project with Bootstrap 4".
 
-The design of the navbar was inspired by the following artist's website [here](https://www.reddwalitzki.com/).
+The design of the navbar was inspired by this [artist's website](https://www.reddwalitzki.com/).
 
-This readme was created following the format of the Code Institute example project found [here](https://github.com/Code-Institute-Solutions/StudentExampleProjectGradeFive/blob/master/README.md).
+This readme was created following the format of the [Code Institute example project](https://github.com/Code-Institute-Solutions/StudentExampleProjectGradeFive/blob/master/README.md).
