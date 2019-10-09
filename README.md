@@ -19,7 +19,7 @@ This is my portfolio website designed to create an online presence as an artist.
 ## Demo
 A live demo can be found [here](https://tesoph.github.io/MS1_Portfolio/).
 
-![Desktop Demo](https://github.com/tesoph/MS1_Portfolio/blob/master/assets/img/index-html.gif)
+![Desktop Demo](https://github.com/tesoph/MS1_Portfolio/blob/master/assets/img/index-html2.gif "Desktop Demo")
 
 ## UX
 
@@ -146,14 +146,16 @@ All images on the site are my own with the following exceptions:
 2. The mockup image for the t-shirt in the shop is taken from [Freepik](https://www.freepik.com/free-psd/simple-black-men-s-tee-mockup_3384897.htm#page=1&query=t%20shirt%20mockup&position=0)
 
 ### Acknowledgements 
-The horizontal scrolling gallery was created following the article [How To Create Horizontal Scrolling Containers](https://codeburst.io/how-to-create-horizontal-scrolling-containers-d8069651e9c6).
+* The horizontal scrolling gallery was created following the article [How To Create Horizontal Scrolling Containers](https://codeburst.io/how-to-create-horizontal-scrolling-containers-d8069651e9c6).
 
-The shop page was created following the article [Designing A Product Page Layout with Flexbox](https://css-tricks.com/designing-a-product-page-layout-with-flexbox/).
+* The shop page was created following the article [Designing A Product Page Layout with Flexbox](https://css-tricks.com/designing-a-product-page-layout-with-flexbox/).
 
-The blur effect on hovering over an image was modelled after the [Mono theme from Themeforest](http://mono.flatheme.net/Home/Portfolio-Minimal.html).
+* The blur effect on hovering over an image was modelled after the [Mono theme from Themeforest](http://mono.flatheme.net/Home/Portfolio-Minimal.html).
 
-The form on the contact page was modelled after the Code Institute lesson "Putting It All Together | Mini Project with Bootstrap 4".
+* The form on the contact page was modelled after the Code Institute lesson "Putting It All Together | Mini Project with Bootstrap 4".
 
-The design of the navbar was inspired by this [artist's website](https://www.reddwalitzki.com/).
+* The design of the navbar was inspired by this [artist's website](https://www.reddwalitzki.com/).
 
-This readme was created following the format of the [Code Institute example project](https://github.com/Code-Institute-Solutions/StudentExampleProjectGradeFive/blob/master/README.md).
+* This README was created following the format of the [Code Institute example project](https://github.com/Code-Institute-Solutions/StudentExampleProjectGradeFive/blob/master/README.md) and has taken inspiration from Code Institute student [AJGreaves's README](https://github.com/AJGreaves/portrait-artist/blob/master/README.md).
+
+* Thanks to my mentor Brian Macharia.
