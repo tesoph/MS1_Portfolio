@@ -322,7 +322,7 @@ button:focus {
     .gallery-col {
         max-height: 240px;
         max-width:240px;
-       /* margin-bottom: 15px;*/
+        margin-bottom: 15px;
     }
     .mobile-spacing {
         display: none;
