@@ -1,3 +1,5 @@
+<div align="center"><img src="https://github.com/tesoph/MS1_Portfolio/blob/master/assets/img/logo/logo2.png?raw=true" alt="logo"></div>
+
 # Rachel Mc Laughlin Art Portfolio
 ## Stream One Project: User-Centric Frontend Development - Code Institute
 
@@ -55,9 +57,9 @@ The following user stories were used to focus on the features the website should
   * Copyright info 
 
 * [Gallery page](https://tesoph.github.io/MS1_Portfolio/index.html)
-  * A gallery of thumbnail images which can individually be clicked to view a large version of the image in a fancybox window. 
-  * On mobile devices this gallery is horizontally scrolling. This design was chosen as side-scrolling is intuitive to mobile users. At the end of the gallery there is blank space left to visually indicate the end of the gallery. 
-  * On viewports wider than 576px the gallery displays as a grid of images. 
+  * A gallery of thumbnail images which can individually be clicked to view a large version of the image in a full-screen fancybox window. Within the fancybox window the user can navigate through all the images in the gallery.
+  * On mobile devices this gallery is horizontally scrolling. This design was chosen as side-scrolling is intuitive to mobile users. At the begining of the gallery the second image is partially shown to visually indicate the presence of horizontally scrolling content. At the end of the gallery there is blank space left to visually indicate the end of the gallery. 
+  * On viewports wider than 576px the gallery displays as a grid of thumbnail images. This grid is 4 columns wide on large devices and up, 3 columns wide on medium devices, and 2 columns wide on small devices.
 
 * [About page](https://tesoph.github.io/MS1_Portfolio/about.html)
   *  Presents information about the artist's work and background.
@@ -67,13 +69,13 @@ The following user stories were used to focus on the features the website should
   * Features products for sale with images and product information. 
 
 * [Contact page](https://tesoph.github.io/MS1_Portfolio/contact.html)
-  * Contact Information
-  * Contact Form
+  * Contact Information: email, phone number and address are provided. This information is in a single column on mobile devices and in 3 columns wide on devices larger than mobile.
+  * Contact Form: the contact form is responsively designed to provide a visually pleasing design on both mobile and larger devices. This form features inputs for name, email, subject of message, and message which are required in order for the form to send. There is a file upload input which is not required. This form also features a Send Message button. If the Send Message button is clicked without the required fields being completed the user is prompted to fill them in.
   
 
 ### Features Left to Implement
 * Gallery filtering 
-  * In the future, I would like to add a feature using Javascript to filter the images in the gallery according to the medium used to create the image to distinguish between different categories of images e.g. drawings, paintings, images created with code, and sketchbook images.
+  * In the future, I would like to add a feature using Javascript to filter the images in the gallery according to the medium used to create the image. This would be used to distinguish between different categories of images e.g. drawings, paintings, images created with code, and sketchbook images.
 
 
 ## Technologies Used
