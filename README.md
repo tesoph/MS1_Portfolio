@@ -46,7 +46,7 @@ In the future, I would like to add a feature using Javascript to filter the imag
 1. HTML
 2. CSS
 3. Bootstrap (v4.3.1)
-4. Fancybox (v3.5.7) (http://fancybox.net/)
+4. [Fancybox (v3.5.7)](http://fancybox.net/)
 
 
 ## Testing
@@ -54,7 +54,7 @@ In the future, I would like to add a feature using Javascript to filter the imag
 ### Index.html
 On the desktop version of the website, when an image in the gallery is hovered over it is enlarged and a blur effect is applied to the image to visually indicate that you can click on it. Clicking on an image is an intuitive action for a mobile user and there is not a :hover function on touchscreen devices, but when clicked the effect is applied.
 
-There is no header on the index page as it is not needed.
+There is no header on the index page to contribute to a minimal design.
 
 ### Shop.html
 The "Add to Cart" buttons in the product-info section, only changes the css style on the button and does not complete any add to cart action.
@@ -65,14 +65,23 @@ The color of the tote bag in the shop can be selected between black and white, u
 The contact page features a form with the method = "post" (sends the form-data as HTTP post transaction). The required attribute is set on the input elements of the form so that a form may not be submitted without valid data being entered in the required fields. The image upload input does not have the required attribute.
 
 ### Navbar
-The logo in the navbar is a clickable link which directs to index.html
+The logo in the navbar is an anchor link which directs to index.html
 
 ### Footer
-All icons in the footer when clicked will open in a new tab using 'target="_blank"' and href="https://www.google.com". All links have been manually tested to ensure that they are pointing to the correct destination.
+All icons in the footer when clicked will open in a new tab using 'target="_blank"' and href="`https://www.google.com`". All links have been manually tested to ensure that they are pointing to the correct destination.
 
 ### Body
-During the testing phase I noticed that there was white space showing up on right-hand side of the browser. This was fixed following: https://stackoverflow.com/questions/4617872/white-space-showing-up-on-right-side-of-page-when-background-image-should-extend/4617920.
-
+During the testing phase I noticed that there was white space showing up on right-hand side of the browser. This was fixed following [this stackoverflow response](https://stackoverflow.com/questions/4617872/white-space-showing-up-on-right-side-of-page-when-background-image-should-extend/4617920) to insert the following code:
+```css
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+```
 ## Deployment
 This site is hosted using GitHub pages, deployed directly from the master branch. The deployed site will update automatically upon new commits to the master branch. In order for the site to deploy correctly on GitHub pages, the landing page must be named `index.html`.
 
@@ -86,8 +95,8 @@ The content for the about page is taken from the Lorem Ipsum text.
 
 ### Media
 All images on the site are my own with the following exceptions:
-1. The mockup image for the tote bag in the shop is taken from https://graphicburger.com/canvas-tote-bag-mockup/.
-2. The mockup image for the t-shirt in the shop is taken from rawpixel.com / Freepik.
+1. The mockup image for the tote bag in the shop is taken from [Graphic Burger](https://graphicburger.com/canvas-tote-bag-mockup/).
+2. The mockup image for the t-shirt in the shop is taken from [Freepik](https://www.freepik.com/free-psd/simple-black-men-s-tee-mockup_3384897.htm#page=1&query=t%20shirt%20mockup&position=0)
 
 ### Acknowledgements 
 The horizontal scrolling gallery was created following this tutorial [here](https://codeburst.io/how-to-create-horizontal-scrolling-containers-d8069651e9c6).
