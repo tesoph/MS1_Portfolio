@@ -5,23 +5,24 @@ This is my portfolio website designed to create an online presence as an artist.
 
 
 ## Demo
-A live demo can be found here.
+A live demo can be found [here](https://tesoph.github.io/MS1_Portfolio/).
 
 
 ## UX
 
 The following user stories were used to focus on the features the website should have:
 
-As a user, I want to be able to view a virtual gallery of the artist’s work.
+* As a user, I want to be able to view a virtual gallery of the artist’s work.
 
-As a user, I want to be able to enlarge the images in the gallery so that I can see more detail of the art.
+* As a user, I want to be able to enlarge the images in the gallery so that I can see more detail of the art.
 
-As a user, I want to be able to contact the artist so I can ask about commissions, collaborations and/or general inquiries. 
+* As a user, I want to be able to contact the artist so I can ask about commissions, collaborations and/or general inquiries. 
 
-As a user, I want to be clearly presented with links to the artist’s social media accounts so I can keep up to date and/or interact with them across the web.
+* As a user, I want to be clearly presented with links to the artist’s social media accounts so I can keep up to date and/or interact with them across the web.
 
-As a user, I want to be able to buy merchandise or artwork so that I can support the artist’s work.
+* As a user, I want to be able to buy merchandise or artwork so that I can support the artist’s work.
 
+### Wireframes
 ![index.html wireframe](https://github.com/tesoph/MS1_Portfolio/blob/master/wireframes/index.jpg?raw=true)
 
 ![about page wireframe](https://github.com/tesoph/MS1_Portfolio/blob/master/wireframes/about.jpg?raw=true)
@@ -44,8 +45,8 @@ In the future, I would like to add a feature using Javascript to filter the imag
 ## Technologies Used
 1. HTML
 2. CSS
-3. Bootstrap (version)
-4. Fancybox (http://fancybox.net/)
+3. Bootstrap (v4.3.1)
+4. Fancybox (v3.5.7) (http://fancybox.net/)
 
 
 ## Testing
