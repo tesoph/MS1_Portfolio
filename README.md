@@ -19,7 +19,7 @@ This is my portfolio website designed to create an online presence as an artist.
 ## Demo
 A live demo can be found [here](https://tesoph.github.io/MS1_Portfolio/).
 
-![Desktop Demo](https://github.com/tesoph/MS1_Portfolio/blob/master/assets/img/index-html.gif "Desktop Demo")
+![Desktop Demo](https://github.com/tesoph/MS1_Portfolio/blob/master/assets/img/index-html1.gif "Desktop Demo")
 
 ## UX
 
@@ -99,7 +99,7 @@ The following user stories were used to focus on the features the website should
 ## Testing
 
 ### Index.html
-On the desktop version of the website, when an image in the gallery is hovered over it is enlarged and a blur effect is applied to the image to visually indicate that you can click on it. Clicking on an image is an intuitive action for a mobile user and there is not a :hover function on touchscreen devices, but when clicked the effect is applied.
+On the desktop version of the website, when an image in the gallery is hovered over it is enlarged and a blur effect is applied to the image to visually indicate that you can click on it. Clicking on an image is an intuitive action for a mobile user and there is not a :hover function on touchscreen devices, but when pressed the effect is applied.
 
 There is no header on the index page to contribute to a minimal design.
 
