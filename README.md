@@ -19,7 +19,7 @@ This is my portfolio website designed to create an online presence as an artist.
 ## Demo
 A live demo can be found [here](https://tesoph.github.io/MS1_Portfolio/).
 
-![Desktop Demo](https://github.com/tesoph/MS1_Portfolio/blob/master/assets/img/index-html2.gif "Desktop Demo")
+![Desktop Demo](https://github.com/tesoph/MS1_Portfolio/blob/master/assets/img/index-html1.gif "Desktop Demo")
 
 ## UX
 
