@@ -23,7 +23,7 @@ The following user stories were used to focus on the features the website should
 * As a user, I want to be able to buy merchandise or artwork so that I can support the artist’s work.
 
 ### Wireframes
-![index.html wireframe](https://github.com/tesoph/MS1_Portfolio/blob/master/wireframes/index.jpg?raw=true)
+![gallery page wireframe](https://github.com/tesoph/MS1_Portfolio/blob/master/wireframes/index.jpg?raw=true)
 
 ![about page wireframe](https://github.com/tesoph/MS1_Portfolio/blob/master/wireframes/about.jpg?raw=true)
 
@@ -34,19 +34,46 @@ The following user stories were used to focus on the features the website should
 ## Features
 
 ### Existing Features
-The navbar is collapsed on mobile devices to contribute to a minimal look.
+* Header (every page)
+  * The header on every page features a navigation bar to navigate through the website.
+  * The navigation bar is collapsed on mobile devices to contribute to a minimal look.
+  * The header features a logo which is an anchor link to the home page.
 
-The site features a gallery of thumbnail images which can individually be clicked to view a full-screen-sized image. On mobile devices this gallery is horizontally scrolling. This design was chosen as side-scrolling is intuitive to mobile users. At the end of the gallery there is blank space left to visually indicate the end of the gallery. On viewports wider than 576px the gallery displays as a grid of images. 
+* Footer (every page)
+  * Social media icons
+  * Copyright info 
+
+* [Gallery page](https://tesoph.github.io/MS1_Portfolio/index.html)
+  * A gallery of thumbnail images which can individually be clicked to view a full-screen-sized image. On mobile devices this gallery is horizontally scrolling. This design was chosen as side-scrolling is intuitive to mobile users. At the end of the gallery there is blank space left to visually indicate the end of the gallery. On viewports wider than 576px the gallery displays as a grid of images. 
+
+* [About page](https://tesoph.github.io/MS1_Portfolio/about.html)
+  *  Presents information about the artist's work and background
+
+* [Shop page](https://tesoph.github.io/MS1_Portfolio/shop.html)
+  * Features products for sale with images and product information. 
+
+* [Contact page](https://tesoph.github.io/MS1_Portfolio/contact.html)
+  * Features a contact form
+  * Features contact information
 
 ### Features Left to Implement
-In the future, I would like to add a feature using Javascript to filter the images in the gallery according to the medium used to create the image to distinguish between different categories of images e.g. drawings, paintings, images created with code, and sketchbook images.
+* Gallery filtering 
+  * In the future, I would like to add a feature using Javascript to filter the images in the gallery according to the medium used to create the image to distinguish between different categories of images e.g. drawings, paintings, images created with code, and sketchbook images.
 
 
 ## Technologies Used
-1. HTML
-2. CSS
-3. Bootstrap (v4.3.1)
-4. [Fancybox (v3.5.7)](http://fancybox.net/)
+* Visual Studio Code
+* HTML
+* CSS
+* Javascript
+  * Used to change the image src in shop.html
+* Bootstrap (v4.3.1)
+* [Fancybox (v3.5.7)](http://fancybox.net/)
+* [Google fonts](https://fonts.google.com/)
+*  FontAwesome
+*  jQuery
+*  Popper.js
+*  [Autoprefixer](https://autoprefixer.github.io/)
 
 
 ## Testing
