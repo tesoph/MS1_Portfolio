@@ -1,6 +1,8 @@
-<div align="center"><img src="https://github.com/tesoph/MS1_Portfolio/blob/master/assets/img/logo/logo2.png?raw=true" alt="logo"></div>
+<div><img src="https://github.com/tesoph/MS1_Portfolio/blob/master/assets/img/logo/logo2.png?raw=true" alt="logo">
+<h1>Art Portfolio</h1>
+</div>
 
-# Rachel Mc Laughlin Art Portfolio
+
 ## Stream One Project: User-Centric Frontend Development - Code Institute
 
 This is my portfolio website designed to create an online presence as an artist. The main feature of the portfolio is a gallery of my artwork displayed on index.html. The website also features an about page, a shop of merchandise, and a contact page with a form.
@@ -35,13 +37,13 @@ The following user stories were used to focus on the features the website should
 * As a user, I want to be able to buy merchandise or artwork so that I can support the artist’s work.
 
 ### Wireframes
-![gallery page wireframe](https://github.com/tesoph/MS1_Portfolio/blob/master/wireframes/index.jpg?raw=true)
+[Index.html](https://github.com/tesoph/MS1_Portfolio/blob/master/wireframes/index.jpg?raw=true)
 
-![about page wireframe](https://github.com/tesoph/MS1_Portfolio/blob/master/wireframes/about.jpg?raw=true)
+[About.html](https://github.com/tesoph/MS1_Portfolio/blob/master/wireframes/about.jpg?raw=true)
 
-![shop page wireframe](https://github.com/tesoph/MS1_Portfolio/blob/master/wireframes/shop.jpg?raw=true)
+[Shop.html](https://github.com/tesoph/MS1_Portfolio/blob/master/wireframes/shop.jpg?raw=true)
 
-![contact page wireframe](https://github.com/tesoph/MS1_Portfolio/blob/master/wireframes/contact.jpg?raw=true)
+[Contact.html](https://github.com/tesoph/MS1_Portfolio/blob/master/wireframes/contact.jpg?raw=true)
 
 ## Features
 
