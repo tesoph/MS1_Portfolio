@@ -5,7 +5,7 @@
 
 ## Stream One Project: User-Centric Frontend Development - Code Institute
 
-This is my portfolio website designed to create an online presence as an artist. The main feature of the portfolio is a gallery of my artwork displayed on index.html. The website also features an about page, a shop of merchandise, and a contact page with a form.
+This is my portfolio website designed with the purpose of creating an online presence as an artist. The main feature of the portfolio is a gallery of my artwork displayed on index.html. The website also features an about page, a shop of merchandise, and a contact page with a form.
 
 ## Table of contents
 * [Demo](#Demo)
@@ -63,6 +63,7 @@ The following user stories were used to focus on the features the website should
   * A gallery of thumbnail images which can individually be clicked to view a large version of the image in a full-screen fancybox window. Within the fancybox window the user can navigate through all the images in the gallery.
   * On mobile devices this gallery is horizontally scrolling. This design was chosen as side-scrolling is intuitive to mobile users. At the begining of the gallery the second image is partially shown to visually indicate the presence of horizontally scrolling content. At the end of the gallery there is blank space left to visually indicate the end of the gallery. 
   * On viewports wider than 576px the gallery displays as a grid of thumbnail images. This grid is 4 columns wide on large devices and up, 3 columns wide on medium devices, and 2 columns wide on small devices.
+  * There is no h1 level heading on the index page to contribute to a minimal design.
 
 * [About page](https://tesoph.github.io/MS1_Portfolio/about.html)
   *  Presents information about the artist's work and background.
@@ -73,14 +74,14 @@ The following user stories were used to focus on the features the website should
 
 * [Contact page](https://tesoph.github.io/MS1_Portfolio/contact.html)
   * Contact Information: email, phone number and address are provided. This information is in a single column on mobile devices and in 3 columns wide on devices larger than mobile.
-  * Contact Form: the contact form is responsively designed to provide a visually pleasing design on both mobile and larger devices. This form has the method = "post" (sends the form-data as HTTP post transaction). The required attribute is set on the input elements of the form so that a form may not be submitted without valid data being entered in the required fields. The image upload input does not have the required attribute. This form also features a Send Message button. If the Send Message button is clicked without the required fields being completed the form will not send and the user will be prompted to fill them in.
+  * Contact Form: the contact form is responsively designed to provide a visually pleasing design on both mobile and larger devices. The required attribute is set on the input elements of the form so that a form may not be submitted without valid data being entered in the required fields. The image upload input does not have the required attribute. This form also features a Send Message button. If the Send Message button is clicked without the required fields being completed the form will not send and the user will be prompted to fill them in.
   
 
 ### Features Left to Implement
 * Gallery filtering 
   * In the future, I would like to add a feature using Javascript to filter the images in the gallery according to the medium used to create the image. This would be used to distinguish between different categories of images e.g. drawings, paintings, images created with code, and sketchbook images.
 * Dynamically updating year of copyright in the footer using Javascript.
-* Interative google map on the contact page with address of studio.
+* Interactive google map on the contact page with address of studio.
 
 
 ## Technologies Used
@@ -108,46 +109,28 @@ The following user stories were used to focus on the features the website should
 * The [W3c Markup Validation Service](https://validator.w3.org) was used to validate each page of html.
 * Chrome DevTools was used to test each page across all media query breakpoints to ensure the responsive design works as expected.
 
-### Navigation bar
-* The logo in the navigation bar is an anchor link which directs to index.html. Each item in the navigation menu has been manually tested on each page to ensure it points to the correct destination. 
-  
-* Chrome DevTools was used to test the navigation bar across all media query breakpoints to ensure it is collapsed on small devices and shown on larger devices.
+The website has been manually tested to ensure it passed the following requirements: 
 
-* On hover of a nav menu item, an animation effect is applied to make the hovered link `font-weight:bold;` and increase the letter spacing to make the hovered link stand out.
+* Navigation bar
+  * The logo in the navigation bar is an anchor link that directs to index.html. 
+  * Each item in the navigation menu points to the correct destination on each page. 
+  * The navbar is collapsed to a navbar-toggler below 576px in width.
+  * On hover of a nav menu item, an animation effect is applied to make the hovered link `font-weight:bold;` and increase the letter spacing.
 
-### Footer
-* On hover the footer icons will change color to black;.
-  
-* All icons in the footer when clicked will open in a new tab using 'target="_blank"' and href="`https://www.google.com`". All icons have been manually tested to ensure that they are pointing to the correct destination and open in a new tab.  
-  
-* During testing, it was noted that on 4K screens the page content did not have enough vertical height to place the footer to the bottom of the viewport. This was fixed with by wrapping all the page content except the footer in a div with the property `flex: 1;` and applying the following rule to the body:
- ```css
-body{
-   display:flex;
-   flex-direction: column;     
-   justify-content: space-between;
-}
-```
+* Footer
+  * On hover the footer icons will change color to black.
+  * All icons in the footer when clicked will open in a new tab using 'target="_blank"' and href="`https://www.google.com`".
      
-### Index.html
-* On the desktop version of the website, when an image in the gallery is hovered over it is enlarged and a blur effect is applied to the image to visually indicate that you can click on it. Each image has been manually tested to ensure each thumbnail points to the correct full size image and that the animation is applied on hover.
+* Index.html
+  * On the desktop version of the website, when an image in the gallery is hovered over it is enlarged and a blur effect is applied to the image to visually indicate that you can click on it. 
+  * Each image thumbnail points to the correct enlarged image.
   
-* Clicking on an image is an intuitive action for a mobile user and there is not a :hover function on touchscreen devices, but when pressed the effect is applied.
 
-* There is no h1 level heading on the index page to contribute to a minimal design.
+
 
 * Chrome DevTools was used to ensure the gallery responds correctly to all media query breakpoints and that there is no screen width at which the images do not fill the columns correctly.
 
-* During the testing phase it was noted that there was white space showing up on right-hand side of the browser. This was fixed following [this stackoverflow response](https://stackoverflow.com/questions/4617872/white-space-showing-up-on-right-side-of-page-when-background-image-should-extend/4617920) and applying the following rule:
-```css
-html,body{
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden; 
-}
-```
+
 
 ### Shop.html
 The "Add to Cart" buttons in the product-info section, only changes the css style on the button and does not complete any add to cart action.
@@ -158,6 +141,27 @@ The color of the tote bag in the shop can be selected between black and white, u
 * The contact form will not submit without all fields with a "required" atrribute being completed with properly-formatted values. In the email-input field the input must match the standard format for Internet e-mail addresses. 
 * If the user clicks on the "Send Message" button without completing the required fields, they will be prompted to fill them in.
 * If the users clicks on the "Send Message" button with all fields correctly filled in, the page will be refreshed.
+
+### Bugs found in the testing phase
+* During the testing phase it was noted that there was white space showing up on right-hand side of the browser. This was fixed following [this stackoverflow response](https://stackoverflow.com/questions/4617872/white-space-showing-up-on-right-side-of-page-when-background-image-should-extend/4617920) and applying the following rule:
+```css
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+```
+* During testing, it was noted that on 4K screens the page content did not have enough vertical height to place the footer to the bottom of the viewport. This was fixed with by wrapping all the page content except the footer in a div with the property `flex: 1;` and applying the following rule to the body:
+ ```css
+body{
+   display:flex;
+   flex-direction: column;     
+   justify-content: space-between;
+}
+```
+
 
 ## Deployment
 This site is hosted using GitHub pages, deployed directly from the master branch. The deployed site will update automatically upon new commits to the master branch. In order for the site to deploy correctly on GitHub pages, the landing page must be named `index.html`.
