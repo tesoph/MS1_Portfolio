@@ -51,9 +51,9 @@ The following user stories were used to focus on the features the website should
 ### Existing Features
 * Header (every page)
   * The header on every page features a navigation bar to navigate through the website.
-  * The navigation bar is responsive and is collapsed to a navbar toggler on mobile devices to contribute to a minimal look.
+  * The navigation bar is responsive and is collapsed to a navbar toggler on devices below 768px width to contribute to a minimal look.
   * The header features a logo which is an anchor link to the home page.
-  * The logo is unconventially placed in the navigation bar (above the navigation links) in order to create a  memorable and eye-catching design.
+  * The logo is unconventially placed in the navigation bar (above the navigation links) in order to create a  memorable design.
 
 * Footer (every page)
   * Social media icons
@@ -73,16 +73,14 @@ The following user stories were used to focus on the features the website should
 
 * [Contact page](https://tesoph.github.io/MS1_Portfolio/contact.html)
   * Contact Information: email, phone number and address are provided. This information is in a single column on mobile devices and in 3 columns wide on devices larger than mobile.
-  * Contact Form: the contact form is responsively designed to provide a visually pleasing design on both mobile and larger devices. This form features inputs for name, email, subject of message, and message which are required in order for the form to send. There is a file upload input which is not required. This form also features a Send Message button. If the Send Message button is clicked without the required fields being completed the user is prompted to fill them in.
+  * Contact Form: the contact form is responsively designed to provide a visually pleasing design on both mobile and larger devices. This form has the method = "post" (sends the form-data as HTTP post transaction). The required attribute is set on the input elements of the form so that a form may not be submitted without valid data being entered in the required fields. The image upload input does not have the required attribute. This form also features a Send Message button. If the Send Message button is clicked without the required fields being completed the form will not send and the user will be prompted to fill them in.
   
 
 ### Features Left to Implement
 * Gallery filtering 
   * In the future, I would like to add a feature using Javascript to filter the images in the gallery according to the medium used to create the image. This would be used to distinguish between different categories of images e.g. drawings, paintings, images created with code, and sketchbook images.
-
-  * Dynamically updating copyright year in the footer using Javascript.
-
-  * Interative google map on the contact page with address of studio.
+* Dynamically updating year of copyright in the footer using Javascript.
+* Interative google map on the contact page with address of studio.
 
 
 ## Technologies Used
@@ -112,14 +110,19 @@ The following user stories were used to focus on the features the website should
 
 ### Navigation bar
 * The logo in the navigation bar is an anchor link which directs to index.html. Each item in the navigation menu has been manually tested on each page to ensure it points to the correct destination. 
+  
 * Chrome DevTools was used to test the navigation bar across all media query breakpoints to ensure it is collapsed on small devices and shown on larger devices.
 
+* On hover of a nav menu item, an animation effect is applied to make the hovered link `font-weight:bold;` and increase the letter spacing to make the hovered link stand out.
+
 ### Footer
+* On hover the footer icons will change color to black;.
+  
 * All icons in the footer when clicked will open in a new tab using 'target="_blank"' and href="`https://www.google.com`". All icons have been manually tested to ensure that they are pointing to the correct destination and open in a new tab.  
-* During testing, it was noted that on 4K screens the page content did not have enough vertical height to place the footer to the bottom of the page. This was fixed with by wrapping all the page content except the footer in a div with `flex: 1;` and applying the following rule.
+  
+* During testing, it was noted that on 4K screens the page content did not have enough vertical height to place the footer to the bottom of the viewport. This was fixed with by wrapping all the page content except the footer in a div with the property `flex: 1;` and applying the following rule to the body:
  ```css
-body
-{
+body{
    display:flex;
    flex-direction: column;     
    justify-content: space-between;
@@ -135,18 +138,9 @@ body
 
 * Chrome DevTools was used to ensure the gallery responds correctly to all media query breakpoints and that there is no screen width at which the images do not fill the columns correctly.
 
-### Shop.html
-The "Add to Cart" buttons in the product-info section, only changes the css style on the button and does not complete any add to cart action.
-
-The color of the tote bag in the shop can be selected between black and white, using javascript to change the img src on click.
-
-### Contact.html
-The contact page features a form with the method = "post" (sends the form-data as HTTP post transaction). The required attribute is set on the input elements of the form so that a form may not be submitted without valid data being entered in the required fields. The image upload input does not have the required attribute.
-
-* During the testing phase I noticed that there was white space showing up on right-hand side of the browser. This was fixed following [this stackoverflow response](https://stackoverflow.com/questions/4617872/white-space-showing-up-on-right-side-of-page-when-background-image-should-extend/4617920) to insert the following code in the CSS file:
+* During the testing phase it was noted that there was white space showing up on right-hand side of the browser. This was fixed following [this stackoverflow response](https://stackoverflow.com/questions/4617872/white-space-showing-up-on-right-side-of-page-when-background-image-should-extend/4617920) and applying the following rule:
 ```css
-html,body
-{
+html,body{
     width: 100%;
     height: 100%;
     margin: 0px;
@@ -154,6 +148,17 @@ html,body
     overflow-x: hidden; 
 }
 ```
+
+### Shop.html
+The "Add to Cart" buttons in the product-info section, only changes the css style on the button and does not complete any add to cart action.
+
+The color of the tote bag in the shop can be selected between black and white, using javascript to change the img src on click.
+
+### Contact.html
+* The contact form will not submit without all fields with a "required" atrribute being completed with properly-formatted values. In the email-input field the input must match the standard format for Internet e-mail addresses. 
+* If the user clicks on the "Send Message" button without completing the required fields, they will be prompted to fill them in.
+* If the users clicks on the "Send Message" button with all fields correctly filled in, the page will be refreshed.
+
 ## Deployment
 This site is hosted using GitHub pages, deployed directly from the master branch. The deployed site will update automatically upon new commits to the master branch. In order for the site to deploy correctly on GitHub pages, the landing page must be named `index.html`.
 
@@ -183,6 +188,6 @@ All images on the site are my own with the following exceptions:
 
 * This README was created following the format of the [Code Institute example project](https://github.com/Code-Institute-Solutions/StudentExampleProjectGradeFive/blob/master/README.md) and has taken inspiration from Code Institute student [AJGreaves's README](https://github.com/AJGreaves/portrait-artist/blob/master/README.md).
 
-* The footer was positioned using the felxbox method from (this article)[https://medium.com/@kayodeniyi/understanding-the-sticky-footer-trick-1e5686c232b6]
+* The footer was positioned using the flexbox method from [this article](https://medium.com/@kayodeniyi/understanding-the-sticky-footer-trick-1e5686c232b6).
 
-* Thanks to my mentor Brian Macharia.
+* Thanks to my mentor Brian Macharia for support and advice.
