@@ -105,10 +105,10 @@ The following user stories were used to focus on the features the website should
         <img style="border:0;width:88px;height:31px"
             src="http://jigsaw.w3.org/css-validator/images/vcss"
             alt="Valid CSS!" /></a>
-            
+
 * The [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) was used to validate the CSS.
 * The [W3c Markup Validation Service](https://validator.w3.org) was used to validate each page of html.
-* Chrome DevTools was used to test each page across all media query breakpoints to ensure responsive design.
+* Chrome DevTools was used to test each page across all media query breakpoints to ensure the responsive design works as expected.
 
 ### Navigation bar
 * The logo in the navigation bar is an anchor link which directs to index.html. Each item in the navigation menu has been manually tested on each page to ensure it points to the correct destination. 
@@ -116,6 +116,15 @@ The following user stories were used to focus on the features the website should
 
 ### Footer
 * All icons in the footer when clicked will open in a new tab using 'target="_blank"' and href="`https://www.google.com`". All icons have been manually tested to ensure that they are pointing to the correct destination and open in a new tab.  
+* During testing, it was noted that on 4K screens the page content did not have enough vertical height to place the footer to the bottom of the page. This was fixed with by wrapping all the page content except the footer in a div with `flex: 1;` and applying the following rule.
+ ```css
+body
+{
+   display:flex;
+   flex-direction: column;     
+   justify-content: space-between;
+}
+```
      
 ### Index.html
 * On the desktop version of the website, when an image in the gallery is hovered over it is enlarged and a blur effect is applied to the image to visually indicate that you can click on it. Each image has been manually tested to ensure each thumbnail points to the correct full size image and that the animation is applied on hover.
