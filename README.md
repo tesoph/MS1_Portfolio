@@ -101,11 +101,11 @@ The following user stories were used to focus on the features the website should
 
 
 ## Testing
-    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+<a href="http://jigsaw.w3.org/css-validator/check/referer">
         <img style="border:0;width:88px;height:31px"
             src="http://jigsaw.w3.org/css-validator/images/vcss"
-            alt="Valid CSS!" />
-    </a>
+            alt="Valid CSS!" /></a>
+            
 * The [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) was used to validate the CSS.
 * The [W3c Markup Validation Service](https://validator.w3.org) was used to validate each page of html.
 * Chrome DevTools was used to test each page across all media query breakpoints to ensure responsive design.
@@ -133,7 +133,6 @@ The color of the tote bag in the shop can be selected between black and white, u
 
 ### Contact.html
 The contact page features a form with the method = "post" (sends the form-data as HTTP post transaction). The required attribute is set on the input elements of the form so that a form may not be submitted without valid data being entered in the required fields. The image upload input does not have the required attribute.
-
 
 * During the testing phase I noticed that there was white space showing up on right-hand side of the browser. This was fixed following [this stackoverflow response](https://stackoverflow.com/questions/4617872/white-space-showing-up-on-right-side-of-page-when-background-image-should-extend/4617920) to insert the following code in the CSS file:
 ```css
