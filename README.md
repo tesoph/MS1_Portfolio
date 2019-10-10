@@ -80,6 +80,10 @@ The following user stories were used to focus on the features the website should
 * Gallery filtering 
   * In the future, I would like to add a feature using Javascript to filter the images in the gallery according to the medium used to create the image. This would be used to distinguish between different categories of images e.g. drawings, paintings, images created with code, and sketchbook images.
 
+  * Dynamically updating copyright year in the footer using Javascript.
+
+  * Interative google map on the contact page with address of studio.
+
 
 ## Technologies Used
 * Visual Studio Code
@@ -98,10 +102,20 @@ The following user stories were used to focus on the features the website should
 
 ## Testing
 
+<p>
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!" />
+    </a>
+</p>
+            
+
+        
 ### Index.html
 On the desktop version of the website, when an image in the gallery is hovered over it is enlarged and a blur effect is applied to the image to visually indicate that you can click on it. Clicking on an image is an intuitive action for a mobile user and there is not a :hover function on touchscreen devices, but when pressed the effect is applied.
 
-There is no header on the index page to contribute to a minimal design.
+There is no h1 level heading on the index page so as to contribute to a minimal design.
 
 ### Shop.html
 The "Add to Cart" buttons in the product-info section, only changes the css style on the button and does not complete any add to cart action.
@@ -157,5 +171,7 @@ All images on the site are my own with the following exceptions:
 * The design of the navbar was inspired by this [artist's website](https://www.reddwalitzki.com/).
 
 * This README was created following the format of the [Code Institute example project](https://github.com/Code-Institute-Solutions/StudentExampleProjectGradeFive/blob/master/README.md) and has taken inspiration from Code Institute student [AJGreaves's README](https://github.com/AJGreaves/portrait-artist/blob/master/README.md).
+
+* The footer was positioned using the felxbox method from (this article)[https://medium.com/@kayodeniyi/understanding-the-sticky-footer-trick-1e5686c232b6]
 
 * Thanks to my mentor Brian Macharia.
