@@ -57,7 +57,13 @@ html, body {
             flex: 1;
 }
 
-.section-wrapper {
+.section-wrapper-gallery {
+    background-color: #dfdfdf;
+    padding: 0%;
+}
+
+.section-wrapper{
+    padding-top:20px;
     background-color: #dfdfdf;
     padding: 0%;
 }
@@ -67,11 +73,13 @@ html, body {
 }
 
 .container-fluid {
-    padding: 0px;
+padding-top:20px;
+padding-left: 0px;
+padding-right:0px;
 }
 
 @media (min-width: 576px) {
-    .section-wrapper {
+    .section-wrapper-gallery {
         padding-left: 9%;
         padding-right: 9%;
         padding-top: 3%;
@@ -79,13 +87,14 @@ html, body {
     }
 }
 
+/*
 @media (min-width: 2560px) {
     .section-wrapper {
         padding-top: 2%;
         padding-bottom: 2%;
     }
 }
-
+*/
 /*----------Headings---------*/
 
 h1 {
@@ -242,6 +251,10 @@ button:focus {
     font-size: 1rem;
 }
 
+.footer .container-fluid{
+   padding:0px;
+}
+
 .footercol {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -254,7 +267,7 @@ button:focus {
 .fa, .fab {
     font-size: 1.5rem;
 }
-@media (min-width: 380px) {
+@media (min-width: 390px) {
     .footer {
         padding: 15px;
         font-size: 1.5rem;
@@ -399,6 +412,7 @@ button:focus {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 50% 50%;
+    margin-top:20px;
 }
 
 #banner {
@@ -407,7 +421,7 @@ button:focus {
 }
 
 .shop {
-    background-color: white;
+  padding: 0 5% 0 5%;
 }
 
 .shop-col {
