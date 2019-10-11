@@ -116,7 +116,7 @@ The following user stories were used to focus on the features the website should
 ### Testing User Stories 
 * As a user, I want to be able to view a virtual gallery of the artist’s work.
   * The home page of the website is a gallery of the artist's work. 
-  * The gallery is responsively designed to look well at every screen size.
+  * The gallery is responsively designed to appropriately display images at every screen size.
   * A greyscale filter has been applied to thumbnails with significant color so that the gallery looks more uniform.
   
 * As a user, I want to be able to enlarge the images in the gallery so that I can see more detail of the art.
@@ -201,8 +201,8 @@ The content for the about page is taken from the Lorem Ipsum text.
 
 ### Media
 All images on the site are my own with the following exceptions:
-1. The mockup image for the tote bag in the shop is taken from [Graphic Burger](https://graphicburger.com/canvas-tote-bag-mockup/).
-2. The mockup image for the t-shirt in the shop is taken from [Freepik](https://www.freepik.com/free-psd/simple-black-men-s-tee-mockup_3384897.htm#page=1&query=t%20shirt%20mockup&position=0)
+1. The mockup image used to create the tote bag in the shop is taken from [Graphic Burger](https://graphicburger.com/canvas-tote-bag-mockup/).
+2. The mockup image used to create the t-shirt in the shop is taken from [Freepik](https://www.freepik.com/free-psd/simple-black-men-s-tee-mockup_3384897.htm#page=1&query=t%20shirt%20mockup&position=0)
 
 ### Acknowledgements 
 * The horizontal scrolling gallery was created following the article [How To Create Horizontal Scrolling Containers](https://codeburst.io/how-to-create-horizontal-scrolling-containers-d8069651e9c6).
