@@ -131,7 +131,7 @@ The website has been manually tested to ensure it passes the following test case
   * The banner is responsive.
   * Clicking the "Add to Cart" buttons in the product-info section applies a CSS click animation.
   * The color of the tote bag in the shop can be selected between black and white. Clicking either "white" or "black" in the product-info section changes the iamge to a product of that color.
-  * On hover of the product images, the image is scaled to 1.05.
+  * On hover of the product images, the image is scaled to 1.05 size.
 
 * Contact.html
   * The contact form will not submit without all fields with a "required" atrribute being completed with properly-formatted values. In the email-input field the input must match the standard format for Internet e-mail addresses. 
