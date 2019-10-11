@@ -5,7 +5,7 @@
 
 ## Stream One Project: User-Centric Frontend Development - Code Institute
 
-This is my portfolio website designed with the purpose of creating an online presence as an artist. The main feature of the portfolio is a gallery of my artwork displayed on index.html. The website also features an about page, a shop of merchandise, and a contact page with a form.
+This is my portfolio website designed with the purpose of creating an online presence as an artist. The main feature of the portfolio is a gallery of my artwork displayed on index.html. The website also features an about page, a shop of merchandise, and a contact page.
 
 ## Table of contents
 * [Demo](#Demo)
@@ -35,6 +35,8 @@ The following user stories were used to focus on the features the website should
 
 * As a user, I want to be clearly presented with links to the artist’s social media accounts so I can keep up to date and/or interact with them across the web.
 
+* As a user, I would to know more about the artist's background and work.
+
 * As a user, I want to be able to buy merchandise or artwork so that I can support the artist’s work.
 
 ### Wireframes
@@ -51,7 +53,7 @@ The following user stories were used to focus on the features the website should
 ### Existing Features
 * Header (every page)
   * The header on every page features a navigation bar to navigate through the website.
-  * The navigation bar is responsive and is collapsed to a navbar toggler on devices below 768px width to contribute to a minimal look.
+  * The navigation bar is responsive and is collapsed to a navbar toggler on devices below 576px width to contribute to a minimal look.
   * The header features a logo which is an anchor link to the home page.
   * The logo is unconventially placed in the navigation bar (above the navigation links) in order to create a  memorable design.
 
@@ -109,8 +111,30 @@ The following user stories were used to focus on the features the website should
 
 * The [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) was used to validate the CSS.
 * The [W3c Markup Validation Service](https://validator.w3.org) was used to validate each page of html.
-* Chrome DevTools was used to test each page across all media query breakpoints to ensure the responsive design works as expected and there is no screen width at which there is overlapping, hidden, or otherwise misplaced elements.
+* Chrome DevTools was used to test each page across all media query breakpoints to ensure the responsive design works as expected and there is no screen width at which there is overflow or misplaced elements.
 
+### Testing User Stories 
+* As a user, I want to be able to view a virtual gallery of the artist’s work.
+  * The home page of the website is a gallery of the artist's work. 
+  * The gallery is responsively designed to look well at every screen size.
+  * A greyscale filter has been applied to thumbnails with significant color so that the gallery looks more uniform.
+  
+* As a user, I want to be able to enlarge the images in the gallery so that I can see more detail of the art.
+  * The thumbnail images in the gallery are cropped and have visual effects applied on hover to indicate that they are clickable. Tapping an image is an intuitive action for a mobile user. On clicking a thumbnail a fancybox window is opened which provides the user with a full-size version of the image and from which the user can navigate all images in the gallery and/or return to the gallery page.
+  
+* As a user, I want to be able to contact the artist so I can ask about commissions, collaborations and/or general inquiries. 
+  * There is a contact page with contact information and a form to contact the artist. This contact page is accessible from every page of the website through the navigation bar and is easy to find.
+
+* As a user, I want to be clearly presented with links to the artist’s social media accounts so I can keep up to date and/or interact with them across the web.
+    * The footer on every page contains social media icons (currently these icons link to Google.com but in the future will be updated with real social media accounts).
+
+* As a user, I would to know more about the artist's background and work.
+  * There is an about page with information on the artist's background and work. This page is easily accesible from the navigation bar on every page.
+
+* As a user, I want to be able to buy merchandise or artwork so that I can support the artist’s work.
+  * There is a shop which is easily accessible from the navigation bar on every page.
+  
+### Manual Testing
 The website has been manually tested to ensure it passes the following test cases:
 
 * Navigation bar (every page)
@@ -129,16 +153,19 @@ The website has been manually tested to ensure it passes the following test case
   * The gallery responds correctly to all media query breakpoints and that there is no screen width at which the images do not fill the columns correctly.
 
 * Shop.html
-  * The banner is responsive.
+  * The banner is responsive and changes image src according to screen size.
   * Clicking the "Add to Cart" buttons in the product-info section applies a CSS click animation.
   * The color of the tote bag in the shop can be selected between black and white. Clicking either "white" or "black" in the product-info section changes the iamge to a product of that color.
   * On hover of the product image, the image is scaled to 1.05 size.
+  * On hover of the product options the hovered option color is changed to red and the font-weight changed to bold.
 
 * Contact.html
+  * The displayed contact information is responsive and is a single column wide on XS devices and 3 columns wide on small devices and above.
   * The contact form will not submit without all fields with a "required" atrribute being completed with properly-formatted values. In the email-input field the input must match the standard format for Internet e-mail addresses. 
   * If the user clicks on the "Send Message" button without completing the required fields, they will be prompted to fill them in.
   * If the user clicks on the "Send Message" button with all fields correctly filled in, the page will be refreshed.
-  * The displayed contact information is responsive and is a single column wide on XS devices and 3 columns wide on small devices and above.
+  * Clicking on the upload image button opens the user's device storage and will only allow them to select files that are images. When an image is selected the name of the file is displayed next to the file input field. When no image has been uploaded it reads "No file chosen" next to the file input field.
+  
 
 ### Bugs found in the testing phase
 * During the testing phase it was noted that there was white space showing up on right-hand side of the browser. This was fixed following [this stackoverflow response](https://stackoverflow.com/questions/4617872/white-space-showing-up-on-right-side-of-page-when-background-image-should-extend/4617920) and applying the following rule:
@@ -193,3 +220,5 @@ All images on the site are my own with the following exceptions:
 * The footer was positioned using the flexbox method from [this article](https://medium.com/@kayodeniyi/understanding-the-sticky-footer-trick-1e5686c232b6).
 
 * Thanks to my mentor Brian Macharia for support and advice.
+
+**This is for educational use.**
