@@ -552,7 +552,7 @@ button:focus {
 }
 
 input[type="file"] {
-    display: none;
+   margin-bottom:10px;
 }
 
 .custom-file-upload {
