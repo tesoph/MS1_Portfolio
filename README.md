@@ -109,12 +109,12 @@ The following user stories were used to focus on the features the website should
 * The [W3c Markup Validation Service](https://validator.w3.org) was used to validate each page of html.
 * Chrome DevTools was used to test each page across all media query breakpoints to ensure the responsive design works as expected.
 
-The website has been manually tested to ensure it passed the following requirements: 
+The website has been manually tested to ensure it passes the following test cases:
 
 * Navigation bar
   * The logo in the navigation bar is an anchor link that directs to index.html. 
   * Each item in the navigation menu points to the correct destination on each page. 
-  * The navbar is collapsed to a navbar-toggler below 576px in width.
+  * The navbar is collapsed to a navbar-toggler below 576px in viewport width and expanded above 576px.
   * On hover of a nav menu item, an animation effect is applied to make the hovered link `font-weight:bold;` and increase the letter spacing.
 
 * Footer
@@ -124,23 +124,19 @@ The website has been manually tested to ensure it passed the following requireme
 * Index.html
   * On the desktop version of the website, when an image in the gallery is hovered over it is enlarged and a blur effect is applied to the image to visually indicate that you can click on it. 
   * Each image thumbnail points to the correct enlarged image.
-  
+  * The gallery responds correctly to all media query breakpoints and that there is no screen width at which the images do not fill the columns correctly.
 
+* Shop.html
+  * The banner is responsive.
+  * Clicking the "Add to Cart" buttons in the product-info section applies a CSS click animation.
+  * The color of the tote bag in the shop can be selected between black and white. Clicking either "white" or "black" in the product-info section changes the iamge to a product of that color.
+  * On hover of the product images, the image is scaled to 1.05.
 
-
-* Chrome DevTools was used to ensure the gallery responds correctly to all media query breakpoints and that there is no screen width at which the images do not fill the columns correctly.
-
-
-
-### Shop.html
-The "Add to Cart" buttons in the product-info section, only changes the css style on the button and does not complete any add to cart action.
-
-The color of the tote bag in the shop can be selected between black and white, using javascript to change the img src on click.
-
-### Contact.html
-* The contact form will not submit without all fields with a "required" atrribute being completed with properly-formatted values. In the email-input field the input must match the standard format for Internet e-mail addresses. 
-* If the user clicks on the "Send Message" button without completing the required fields, they will be prompted to fill them in.
-* If the users clicks on the "Send Message" button with all fields correctly filled in, the page will be refreshed.
+* Contact.html
+  * The contact form will not submit without all fields with a "required" atrribute being completed with properly-formatted values. In the email-input field the input must match the standard format for Internet e-mail addresses. 
+  * If the user clicks on the "Send Message" button without completing the required fields, they will be prompted to fill them in.
+  * If the user clicks on the "Send Message" button with all fields correctly filled in, the page will be refreshed.
+  * The displayed contact information is responsive and is a single column wide on XS devices and 3 columns wide on small devices and above.
 
 ### Bugs found in the testing phase
 * During the testing phase it was noted that there was white space showing up on right-hand side of the browser. This was fixed following [this stackoverflow response](https://stackoverflow.com/questions/4617872/white-space-showing-up-on-right-side-of-page-when-background-image-should-extend/4617920) and applying the following rule:
