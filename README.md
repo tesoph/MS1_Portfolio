@@ -70,7 +70,8 @@ The following user stories were used to focus on the features the website should
 
 * [Shop page](https://tesoph.github.io/MS1_Portfolio/shop.html)
   * Banner to advertise a sale.
-  * Features products for sale with images and product information. 
+  * Features products for sale with images and product information.
+  * On the product information section of the tote bag product the color can be selected which will change the product image to match the selected color.
 
 * [Contact page](https://tesoph.github.io/MS1_Portfolio/contact.html)
   * Contact Information: email, phone number and address are provided. This information is in a single column on mobile devices and in 3 columns wide on devices larger than mobile.
@@ -111,13 +112,13 @@ The following user stories were used to focus on the features the website should
 
 The website has been manually tested to ensure it passes the following test cases:
 
-* Navigation bar
+* Navigation bar (every page)
   * The logo in the navigation bar is an anchor link that directs to index.html. 
-  * Each item in the navigation menu points to the correct destination on each page. 
+  * Each item in the navigation menu points to the correct destination.
   * The navbar is collapsed to a navbar-toggler below 576px in viewport width and expanded above 576px.
   * On hover of a nav menu item, an animation effect is applied to make the hovered link `font-weight:bold;` and increase the letter spacing.
 
-* Footer
+* Footer (every page)
   * On hover the footer icons will change color to black.
   * All icons in the footer when clicked will open in a new tab using 'target="_blank"' and href="`https://www.google.com`".
      
