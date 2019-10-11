@@ -326,6 +326,11 @@ button:focus {
     display: block;
 }
 
+.gallery-col .color{
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
 .gallery-col a {
     -o-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
