@@ -82,7 +82,8 @@ The following user stories were used to focus on the features the website should
 * Gallery filtering 
   * In the future, I would like to add a feature using Javascript to filter the images in the gallery according to the medium used to create the image. This would be used to distinguish between different categories of images e.g. drawings, paintings, images created with code, and sketchbook images.
 * Dynamically updating year of copyright in the footer using Javascript.
-* Interactive google map on the contact page with address of studio.
+* Functional contact form.
+* Footer icons linking to real social media accounts.
 
 
 ## Technologies Used
@@ -108,7 +109,7 @@ The following user stories were used to focus on the features the website should
 
 * The [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) was used to validate the CSS.
 * The [W3c Markup Validation Service](https://validator.w3.org) was used to validate each page of html.
-* Chrome DevTools was used to test each page across all media query breakpoints to ensure the responsive design works as expected.
+* Chrome DevTools was used to test each page across all media query breakpoints to ensure the responsive design works as expected and there is no screen width at which there is overlapping, hidden, or otherwise misplaced elements.
 
 The website has been manually tested to ensure it passes the following test cases:
 
@@ -131,7 +132,7 @@ The website has been manually tested to ensure it passes the following test case
   * The banner is responsive.
   * Clicking the "Add to Cart" buttons in the product-info section applies a CSS click animation.
   * The color of the tote bag in the shop can be selected between black and white. Clicking either "white" or "black" in the product-info section changes the iamge to a product of that color.
-  * On hover of the product images, the image is scaled to 1.05 size.
+  * On hover of the product image, the image is scaled to 1.05 size.
 
 * Contact.html
   * The contact form will not submit without all fields with a "required" atrribute being completed with properly-formatted values. In the email-input field the input must match the standard format for Internet e-mail addresses. 
