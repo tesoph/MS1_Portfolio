@@ -180,7 +180,12 @@ button:focus {
     margin-top: 1%;
 }
 
-
+.nav-item{
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+}
 .nav .nav-item a {
     color: #314455;
     font-size: 1.12em;
