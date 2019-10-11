@@ -34,11 +34,11 @@ html, body {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     width: 100%;
     height: 100%;
     margin: 0px;
@@ -53,8 +53,8 @@ html, body {
 
 .wrapper {
     -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
+    -ms-flex: 1;
+    flex: 1;
 }
 
 .section-wrapper-gallery {
@@ -62,8 +62,8 @@ html, body {
     padding: 0%;
 }
 
-.section-wrapper{
-    padding-top:20px;
+.section-wrapper {
+    padding-top: 20px;
     background-color: #dfdfdf;
     padding: 0%;
 }
@@ -73,9 +73,9 @@ html, body {
 }
 
 .container-fluid {
-padding-top:20px;
-padding-left: 0px;
-padding-right:0px;
+    padding-top: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 @media (min-width: 576px) {
@@ -87,14 +87,6 @@ padding-right:0px;
     }
 }
 
-/*
-@media (min-width: 2560px) {
-    .section-wrapper {
-        padding-top: 2%;
-        padding-bottom: 2%;
-    }
-}
-*/
 /*----------Headings---------*/
 
 h1 {
@@ -174,12 +166,13 @@ button:focus {
     margin-top: 1%;
 }
 
-.nav-item{
+.nav-item {
     -o-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     -webkit-transition: all .2s ease-in-out;
 }
+
 .nav .nav-item a {
     color: #314455;
     font-size: 1.12em;
@@ -215,7 +208,6 @@ button:focus {
     .page-container {
         margin-left: 0px;
     }
-
     .navbar {
         font-size: 1.60rem;
         background-color: white;
@@ -228,12 +220,13 @@ button:focus {
         max-width: 200px;
     }
 }
+
 @media (min-width: 768px) {
-   
-   .navbar-collapse.collapse {
+    .navbar-collapse.collapse {
         display: block !important;
     }
 }
+
 /*----------FOOTER---------*/
 
 .footer i.fa, i.fab {
@@ -251,8 +244,8 @@ button:focus {
     font-size: 1rem;
 }
 
-.footer .container-fluid{
-   padding:0px;
+.footer .container-fluid {
+    padding: 0px;
 }
 
 .footercol {
@@ -267,6 +260,7 @@ button:focus {
 .fa, .fab {
     font-size: 1.5rem;
 }
+
 @media (min-width: 390px) {
     .footer {
         padding: 15px;
@@ -320,8 +314,9 @@ button:focus {
     display: block;
 }
 
-.gallery-col .color{
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+.gallery-col .color {
+    /* Safari 6.0 - 9.0 */
+    -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
 }
 
@@ -351,20 +346,21 @@ button:focus {
         flex-wrap: wrap;
         padding: 0px;
         -webkit-box-pack: center !important;
-            -ms-flex-pack: center !important;
-                justify-content: center !important;
+        -ms-flex-pack: center !important;
+        justify-content: center !important;
     }
     .gallery-col {
         max-height: 240px;
         max-width: 240px;
-        margin-bottom: 15px;
+        margin-bottom: 7.5px;
+        margin-top: 7.5px;
     }
     .mobile-spacing {
         display: none;
     }
     #scrolling-wrapper .col-4 {
         display: none;
-        /*Col-4 only needed on mobile devices to indicate the end of hoirzontal scrolling gallery. Display set to none so that col-4 will not interfere with centering the images within the row on viewports* larger than 576px*/
+        /*Col-4 is only needed on mobile devices to indicate the end of horizontal scrolling gallery. On devices above 576px width display set to none so that col-4 will not interfere with centering the images within the row*/
     }
 }
 
@@ -417,7 +413,7 @@ button:focus {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    margin-top:20px;
+    margin-top: 20px;
 }
 
 #banner {
@@ -426,7 +422,7 @@ button:focus {
 }
 
 .shop {
-  padding: 0 5% 0 5%;
+    padding: 0 5% 0 5%;
 }
 
 .shop-col {
@@ -472,7 +468,7 @@ button:focus {
     text-align: center;
 }
 
-.product-info .size {
+.product-info .info {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -484,7 +480,7 @@ button:focus {
     margin-top: 10px;
 }
 
-.product-info .size h5:hover {
+.product-info .info h5:hover {
     color: red;
     font-weight: bold;
 }
@@ -514,7 +510,6 @@ button:focus {
     }
     .banner {
         min-height: 300px;
-      
     }
 }
 
@@ -546,7 +541,7 @@ button:focus {
 }
 
 input[type="file"] {
-   margin-bottom:10px;
+    margin-bottom: 10px;
 }
 
 .custom-file-upload {
